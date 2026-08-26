@@ -65,8 +65,15 @@ jobs:
 
             # With changesets pending: opens or updates the Version Packages
             # pull request and stops. With none pending — the state right after
-            # that pull request merges — `hasChangesets` is false, which is the
-            # signal that a freshly-versioned commit just landed.
+            # that pull request merges — `has-changesets` is false, which is
+            # the signal that a freshly-versioned commit just landed.
+            #
+            # The output is `has-changesets`, kebab-case: changesets/action v2
+            # renamed it from v1's `hasChangesets`. Reading the old name yields
+            # an empty string, `'' == 'false'` is false, and every release step
+            # below is skipped forever — the workflow runs green and cuts
+            # nothing. It must also be read with bracket notation, because a
+            # hyphen in a property name is parsed as subtraction.
             #
             # This package is `private: true`, so `.changeset/config.json`
             # declares `privatePackages.version` — without it changesets 3
@@ -95,7 +102,7 @@ jobs:
             # release twice.
             - name: Decide whether to release
               id: decide
-              if: steps.changesets.outputs.hasChangesets == 'false'
+              if: steps.changesets.outputs['has-changesets'] == 'false'
               run: |
                   VERSION=$(node -p "require('./package.json').version")
                   TAG="v$VERSION"
