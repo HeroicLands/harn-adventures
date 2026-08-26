@@ -5,7 +5,7 @@
 
 Hârn Adventures is a collection module for Foundry VTT. It gathers seventeen fan-written works for the [HârnWorld](https://columbiagames.com/harnworld/) fantasy setting — locations, adventures, and a campaign — and presents them as fourteen ready-to-play adventures, each one importable on its own.
 
-Most are set in the Kingdom of Kaldor, on the island of Hârn: the manors, keeps, and abbeys of Fethael and Asolade Hundreds, an inn in the city of Olokand, and the roads and trails between them. Several are deliberately portable — a barrow tomb, an abandoned Khuzdul outpost, a mini-adventure on a wilderness road — and can be dropped into any fantasy setting with minimal adaptation.
+Most are set in the Kingdom of Kaldor, on the island of Hârn: the manors, keeps, and abbeys of Fethael and Asolade Hundreds, an inn in the city of Olokand, and the roads and trails between them. Several are deliberately portable — a barrow tomb, an abandoned Khuzan outpost, a mini-adventure on a wilderness road — and can be dropped into any fantasy setting with minimal adaptation.
 
 The adventures themselves — maps, journal entries, and roll tables — are core Foundry documents carrying no system data, so they import into a world running any game system. Only the NPCs are system-specific: they ship in separate actor compendiums for [HârnMaster 3](https://github.com/HeroicLands/HarnMaster-3-FoundryVTT) (`hm3`) and [Song of Heroic Lands](https://foundryvtt.com/packages/sohl) (`sohl`). Each NPC is also described in the journal entries, so a referee running any other system has what they need to convert them.
 
@@ -40,7 +40,7 @@ This module is "[Fanon](https://www.lythia.com/about/publishing-fan-written-mate
 | [Getha Keep](https://www.lythia.com/harnworld/settlements/getha-keep/) | Location | Joe Adams | George Kelln, Robert Barfield, Matthias Janssen | Thanks to Dan Bell & John Sgammato |
 | [Hundholt](https://www.lythia.com/harnworld/settlements/hundholt/) | Location | Joe Adams | George Kelln, Matthias Janssen | Thanks to Robert Barfield |
 | [Jedes](https://www.lythia.com/harnworld/settlements/jedes/) | Location | Neil Thompson | Matthias Janssen, Daniel Bell, Tim Falkenberg, Richard Luschek, Juha Makkonen, Daniele Och | Thanks to Grant Dalgleish for permission to use the official 'Shernath Mirdarne' illustration from the 'Kaldor Kingdom Module', and to N. Robin Crossby |
-| [Khuzdul Outpost](https://www.lythia.com/harnworld/settlements/khuzan-outpost/) | Location | Kerry Mould | Thomas Shook | |
+| [Khuzan Outpost](https://www.lythia.com/harnworld/settlements/khuzan-outpost/) | Location | Kerry Mould | Thomas Shook | |
 | [Lethyl](https://www.lythia.com/harnworld/settlements/lethyl/) | Location | Joe Adams | George Kelln, Robert Barfield | Thanks to Kerry Mould & Allan Prewett |
 | [Ominstru Manor](https://www.lythia.com/fethael-hundred/manors.html) | Location | Joe Adams | George Kelln, Matthias Janssen, Robert Barfield, Allan Prewett | From Fethael Hundred Manors |
 | [The Standing Bear Inn](https://www.lythia.com/harnworld/guilds-trade/the-standing-bear-inn/) | Location | Rob Barnes, Kerry Mould | Richard Luschek, Brent Bailey | A fan-written expansion of Olokand ([COL #5618](https://secure.columbiagames.com/product/5618-PDF)); characters from ['Friends, Foes, and Followers, Part 16'](https://www.lythia.com/game_aides/friends-foes-followers-part-16-the-standing-bear-inn/), illustrations sponsored by Rob Barnes & Patrick Nilsson; Foundry conversion with Stephen Cooper |
