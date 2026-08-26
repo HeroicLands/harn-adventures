@@ -6,7 +6,7 @@ HârnWorld fan material, as Foundry compendium packs and nothing else.
 
 **This repository is its own tracker.** File Hârn Adventures work here, not in a
 system repository. Every repository in the project tracks its own work — the site
-included. See §9 for where a given piece of work belongs.
+included.
 
 > **This repository is a carve-out.** It is unofficial HârnWorld fan material —
 > "Fanon" under Lythia.com's terms, derived from material copyrighted by Keléstia
@@ -388,12 +388,12 @@ this one.
 
 You should confirm all of these before submitting an issue:
 
-- [ ] This is the right repository (§9) — the work will be delivered here.
+- [ ] This is the right repository — the work will be delivered here.
 - [ ] Exactly **one type** assigned, chosen via the §5 procedure.
 - [ ] A **priority** is set. If above Medium, the body justifies it in one line.
-- [ ] Every label comes from the §3 registry. **Zero** invented labels.
+- [ ] Every label comes from the label registry. **Zero** invented labels.
 - [ ] No label duplicates what the type, priority field, or milestone already says.
 - [ ] **Milestone** set only when the issue clearly advances one existing capability gate (§4); otherwise unset. **Never** invented.
-- [ ] Title is imperative and specific; body follows the §6 shape for its type. Title should not encode labels or other field information.
-- [ ] If `security` + exploitable → routed to **private advisory**, not a public issue (§7).
+- [ ] Title is imperative and specific; body follows the appropriate shape for its type. Title should not encode labels or other field information.
+- [ ] If `security` + exploitable → routed to **private advisory**, not a public issue.
 - [ ] If **epic** → sub-issues are linked. If **spike** → question and timebox are present.
