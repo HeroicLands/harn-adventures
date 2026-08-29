@@ -4,7 +4,12 @@
 # tree, so there is no Markdown pass: `packs[].prebuilt` points the compile at
 # the JSON that is already built (package-build#40).
 
-contentPackage: harn-adventures
+# `contentPackage` carries no hyphen, and must not: it is the first segment of
+# every canonical content address (`<package>-<system>-<type>-<shortcode>`), and
+# the parser treats `-` purely as a separator, so a hyphenated package name is
+# unreadable — and fails silently, by returning nothing. The Foundry package id
+# is a separate name and stays `harn-adventures`; it comes from `package.json`.
+contentPackage: harnadventures
 packageKind: modules
 
 stats:
@@ -32,10 +37,22 @@ packs:
       type: Adventure
       prebuilt: assets/packs/adventure
 
-# Publishing no site and no link manifest is a licensing decision, not a
-# consequence of having no site. This content is HârnFanon under Lythia's terms
-# and is never published to heroiclands.org; emitting a manifest would be the
-# dependency edge that stops the module being withdrawable.
+# Both switches are a licensing decision, not a consequence of having nothing to
+# publish. This content is HârnFanon under Lythia's terms, so none of it — journal
+# text, artwork, item descriptions, compiled notes — is ever published to
+# heroiclands.org. `site: false` is that rule: this build generates no content
+# pages.
+#
+# It is not a rule against the package being *named* on the site. Every package
+# has a top-level, human-authored homepage announcing it — this one at
+# https://www.heroiclands.org/harnadventures/, an address that derives from
+# `contentPackage` above, not from the repository name. A page describing the
+# module discloses nothing licensed, and it creates no dependency: nothing has to
+# resolve through it, so withdrawing the module costs a page.
+#
+# The manifest is where the dependency edge would be, which is why it stays off in
+# both directions. Emitting one would let other packages cite these addresses and
+# make the module something the project needs to keep.
 publish:
     site: false
     manifests: { publish: false, consume: false }
