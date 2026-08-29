@@ -13,10 +13,23 @@ included.
 > Productions Ltd, Columbia Games Inc, and N. Robin Crossby — licensed CC BY-NC-SA
 > 4.0, separately from SoHL. Nothing elsewhere in the project may depend on it: it
 > must stay withdrawable without affecting any system or package. **Its content is
-> never published to heroiclands.org**, and no site or knowledgebase pages are
-> generated from it — that is a licensing boundary, not a gap to fill. An issue
-> proposing either a dependency **on** this repository or publication of its content
-> is out of scope, and belongs as a discussion before it becomes an issue anywhere.
+> never published to heroiclands.org** — no journal text, artwork, item descriptions
+> or compiled notes, and no site or knowledgebase pages generated from any of it.
+> That is a licensing boundary, not a gap to fill.
+>
+> It is not a rule against the module being _named_ on the site. Every package has a
+> top-level, human-authored homepage announcing it — this one's will be at
+> `https://www.heroiclands.org/harnadventures/`, an address that derives from the
+> package name rather than the repository name. Such a page says what the module is,
+> which system it needs, where the source lives, and carries the licence notice: it
+> discloses nothing licensed, and it creates no dependency, because nothing has to
+> resolve through it — withdrawing the module costs a page. The **link manifest** is
+> where the dependency edge would be, and it stays unpublished in both directions for
+> that reason. A homepage is not that edge.
+>
+> An issue proposing a dependency **on** this repository, or publication of its
+> **content**, is out of scope, and belongs as a discussion before it becomes an
+> issue anywhere.
 
 The core discipline is simple — four axes, each answering a different question:
 
