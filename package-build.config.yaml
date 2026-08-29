@@ -40,22 +40,36 @@ packs:
 # Both switches are a licensing decision, not a consequence of having nothing to
 # publish. This content is HârnFanon under Lythia's terms, so none of it — journal
 # text, artwork, item descriptions, compiled notes — is ever published to
-# heroiclands.org. `site: false` is that rule: this build generates no content
-# pages.
+# heroiclands.org. `site: homepage` is that rule: the content tree is never walked
+# for pages, and `sections`, `trees`, `landing` and `backfillSections` emit nothing
+# even if one of them is ever declared below. The boundary is asserted by the code
+# path rather than left to a configuration that happens to be empty, because the
+# failure mode is silent — a `site:` block grown one key at a time ships licensed
+# content with nobody noticing.
 #
 # It is not a rule against the package being *named* on the site. Every package
 # has a top-level, human-authored homepage announcing it — this one at
 # https://www.heroiclands.org/harnadventures/, an address that derives from
-# `contentPackage` above, not from the repository name. A page describing the
-# module discloses nothing licensed, and it creates no dependency: nothing has to
-# resolve through it, so withdrawing the module costs a page.
+# `contentPackage` above, not from the repository name. It is authored as
+# `assets/content/homepage.md` and is the only page this build emits. A page
+# describing the module discloses nothing licensed, and it creates no dependency:
+# nothing has to resolve through it, so withdrawing the module costs a page.
 #
 # The manifest is where the dependency edge would be, which is why it stays off in
 # both directions. Emitting one would let other packages cite these addresses and
 # make the module something the project needs to keep.
 publish:
-    site: false
+    site: homepage
     manifests: { publish: false, consume: false }
+
+# Where the homepage is written — and, in `homepage` mode, the whole of it: the
+# page lands at `<out>/_index.md`, the package's own root. `out` is required and
+# is not defaulted: the directory is wiped on every run, and an unset one resolves
+# to the repository root, so the build refuses to continue without it. The path
+# matches the sibling convention (`sohl-thalorna` publishes from `site/content`),
+# and the emitted tree is a build artifact — it is gitignored, not committed.
+site:
+    out: site/content
 
 packageBuild:
     assets:

@@ -63,6 +63,11 @@ assets/content/.obsidian/
 /coverage/
 /css/
 
+# The emitted site tree: `content-build site` writes the package homepage here
+# and wipes the directory on every run, so it is a build artifact, not source.
+# The homepage itself is authored in `assets/content/`.
+/site/content/
+
 # Cypress run artifacts (specs/support/config are committed)
 /cypress/videos/
 /cypress/screenshots/
