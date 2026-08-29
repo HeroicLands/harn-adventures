@@ -109,8 +109,8 @@ priority answers "when I next sit down, what deserves my time?" not "what is due
 Labels are for **categorization only**. The table below is the **complete,
 authoritative set for this repository**. Its machine-readable twin is
 `.github/labels.yml`, which the `labels-sync` workflow reconciles onto GitHub (the
-set is _closed_ — a label not in the registry is deleted on sync). `npm run
-lint:labels` fails if the two disagree (`check-labels`), so they cannot drift.
+set is _closed_ — a label not in the registry is deleted on sync). Nothing checks
+the table below against that file, so the two are kept in step by hand.
 
 > **MUST NOT invent, rename, or improvise labels.** If no existing label fits, add
 > none and (if it matters) note the gap in the issue body for a maintainer to decide.
