@@ -1,0 +1,17 @@
+# Compiled Adventure documents (`packs[].prebuilt` in package-build.config.yaml).
+# These fourteen files are the module's shipped compendium source, written by
+# the Foundry compendium tooling rather than by hand — `content-build package
+# unpack` emits them with `JSON.stringify(…, null, 2)`, the 2-space indent every
+# HeroicLands repository's pack JSON shares. The shared Prettier configuration
+# is `tabWidth: 4`, so formatting them would put the two writers permanently at
+# odds: every re-extract would revert the format and re-redden the check.
+#
+# The churn is not small either. Prettier rewrites the *smallest* of the
+# fourteen from 306 KB to 388 KB (+26%) and restructures its line breaks; across
+# all fourteen that is ~430,000 lines, essentially every one of them, burying
+# any real content change in review and in `git blame` forever.
+#
+# Same rule, same reason as `**/packs` in Song-of-Heroic-Lands-FoundryVTT and
+# `assets/manifests/*.json` in sohl-thalorna and harn-ensemble: machine-written
+# JSON belongs to the tool that writes it. Prettier owns the prose here.
+assets/packs/
