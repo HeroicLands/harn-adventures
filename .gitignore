@@ -68,6 +68,13 @@ assets/content/.obsidian/
 # The homepage itself is authored in `assets/content/`.
 /site/content/
 
+# Hugo's own scratch under the site root: a lock file it holds for the duration
+# of a build, and the cache it writes when a template processes an asset. Both
+# are per-run, per-machine state. `site/hugo.toml` is the only tracked file
+# here; the rendered output goes to `build/site/`, which is ignored above.
+/site/.hugo_build.lock
+/site/resources/
+
 # Cypress run artifacts (specs/support/config are committed)
 /cypress/videos/
 /cypress/screenshots/
