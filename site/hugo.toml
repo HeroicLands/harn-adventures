@@ -1,0 +1,145 @@
+# Hârn Adventures — this package's homepage, and nothing else (#15).
+#
+# This repository publishes ONE page. That is a licensing boundary, not a
+# preference: the module is unofficial HârnWorld fan material — "Fanon" under
+# Lythia.com's terms — so none of its content is ever published, no journal
+# text, artwork, item descriptions or compiled notes. `publish.site: homepage`
+# in `package-build.config.yaml` is the structural fence — `buildSite` returns
+# before the content tree is ever walked for pages. This file renders that one
+# page; it does not decide how many there are, and it must never be given a
+# reason to render more.
+#
+# `baseURL` is the one place the site's address is written down. It carries the
+# `/harnadventures/` prefix, so every href, asset URL and redirect Hugo spells
+# is already mounted under it; the router resolves `/harnadventures/` to
+# `harnadventures.pkg.heroiclands.org` by convention and needs no entry of its
+# own. The prefix comes from `contentPackage`, not from the repository name.
+baseURL = "https://www.heroiclands.org/harnadventures/"
+locale = "en-us"
+title = "Hârn Adventures"
+
+# Every page kind but the home page and its 404, switched off at the source.
+# This is the one-page rule expressed in Hugo's own terms, and it is not
+# belt-and-braces: Hugo's default taxonomies are `tags` and `categories`, and it
+# publishes a list page for each **whether or not anything is filed under
+# them** — so a default configuration emits three pages from one content file
+# and fails the shared workflow's homepage-mode guard, which fixes the bound at
+# exactly one. `section` and `term` go with them: this site has neither, and a
+# kind that cannot be reached is better disabled than left armed.
+#
+# `RSS` because a feed for a one-page site advertises updates that cannot
+# happen, and `sitemap` because a sitemap listing one URL is noise. Neither is
+# counted by the guard, which counts `index.html` files.
+#
+# **It must stay above every table header.** TOML binds a bare key to the table
+# most recently opened, so the same line written below `[menu]` becomes
+# `menu.main[…].disableKinds` — accepted by the parser, ignored by Hugo, and
+# visible only as a page count that quietly went back to three.
+disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap"]
+
+# The output is published *with* the prefix — `build/site/harnadventures/` —
+# and the deploy uploads `build/site`, whose root is the hosting project's
+# origin. So the deployment is byte-for-byte what www serves: it can be checked
+# at the project's own address before any routing points at it, and it leaves
+# the routing layer a path-preserving pass-through rather than a rewriter. The
+# shared deploy workflow requires exactly this shape.
+#
+# Relative to the Hugo root, which is this directory — not the repository root.
+publishDir = "../build/site/harnadventures"
+
+# Brand chrome, the landing layout and the "page not found" page come from the
+# shared theme, so this page reads as one whole with www, the SoHL
+# knowledgebase and Thalorna.
+#
+# It arrives through `npm ci`. Hugo looks for `<themesDir>/<theme>`, so the
+# package's scope is the themes directory and its name is the theme name —
+# nothing is copied and no module mounts are needed. `themesDir` is likewise
+# relative to the Hugo root; the lockfile that installed it is one level up.
+themesDir = "../node_modules/@heroiclands"
+theme = "hugo-theme"
+
+# Written by `npm run build:site-content` (`content-build site`) from
+# `assets/content/homepage.md`. The directory is a build artifact — wiped and
+# rewritten on every run — and is gitignored.
+contentDir = "content"
+
+[params]
+  description = "Fourteen ready-to-play adventures for HârnWorld, adapted from fan-written works published on Lythia.com."
+  author = "Tom Rodriguez"
+
+  # The theme carries layout, not addresses, so every site-specific URL it
+  # renders is supplied here. See the theme's README for the full contract.
+  cdnBaseURL = "https://cdn.heroiclands.org"
+
+  [params.brand]
+    logo       = "images/brand/sohl-icon-white.webp"
+    licenseURL = "https://www.heroiclands.org/license/"
+    discordURL = "https://discord.gg/EwMfkNd3az"
+
+  # The "page not found" page. Cloudflare Pages serves it with a real 404 for
+  # any unmatched path; without one it falls back to the site root, which is a
+  # soft 404 — a 200 carrying this landing — and reads as success to every link
+  # checker there is. Its template is the theme's, since every consumer needs
+  # one; the wording and the routes back are ours.
+  #
+  # A one-page site has no section of its own to route a lost reader to, so
+  # every route here but the first leaves for somewhere else. That is the
+  # honest answer rather than a padded one.
+  [params.notfound]
+    tagline  = "This module has one page, and it is not at"
+    sitenoun = "module"
+
+    [[params.notfound.links]]
+      title = "Hârn Adventures"
+      url   = "/"
+      text  = "What this module carries, and how to install it."
+    [[params.notfound.links]]
+      title = "Modules"
+      url   = "https://www.heroiclands.org/projects/modules/"
+      text  = "The other modules published here."
+    [[params.notfound.links]]
+      title = "Lythia.com"
+      url   = "https://www.lythia.com/"
+      text  = "The fan site the works adapted here were published on."
+
+# The brand nav. Absolute URLs so this header matches the one every other site
+# renders; defined here rather than in the shared theme, which carries no
+# addresses of its own. It is also the only way off a one-page site, so it is
+# not optional chrome here.
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "https://www.heroiclands.org/"
+    weight = 1
+  [[menu.main]]
+    name = "Song of Heroic Lands"
+    url = "https://www.heroiclands.org/projects/song-of-heroic-lands/"
+    weight = 2
+    identifier = "sohl"
+  [[menu.main]]
+    name = "Knowledgebase"
+    url = "https://kb.heroiclands.org/"
+    weight = 1
+    parent = "sohl"
+  [[menu.main]]
+    name = "API Documentation"
+    url = "https://api.heroiclands.org/"
+    weight = 2
+    parent = "sohl"
+  [[menu.main]]
+    name = "Thalorna"
+    url = "https://www.heroiclands.org/thalorna/world/thalorna/"
+    weight = 3
+  [[menu.main]]
+    name = "HârnMaster 3"
+    url = "https://www.heroiclands.org/projects/hm3/"
+    weight = 4
+  [[menu.main]]
+    name = "Modules"
+    url = "https://www.heroiclands.org/projects/modules/"
+    weight = 5
+  [[menu.main]]
+    name = "License"
+    url = "https://www.heroiclands.org/license/"
+    weight = 6
+
