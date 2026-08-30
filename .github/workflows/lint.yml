@@ -1,0 +1,78 @@
+# Lint the tree on every pull request (#17).
+#
+# This runs **three** of the four checks `npm run lint` chains, not the chain
+# itself. The omission is a decision, not an oversight, and this comment is
+# where it is recorded.
+#
+# HELD BACK: `lint:addresses` (`content-build lint`).
+#
+#   This module ships fourteen prebuilt Adventure documents rather than a
+#   content tree, so `assets/content/` holds exactly one note — the package
+#   homepage `publish.site: homepage` emits. Today the address linter reads that
+#   as an empty tree and fails:
+#
+#     assets/content: error: holds no keyed content, so every rule here is
+#     vacuous — check that the content tree is present and that this is its root
+#
+#   The finding is about the guard, not about this repository:
+#   HeroicLands/package-build#80 changes it from `byKey.size === 0` to
+#   `notes.length === 0`, which is what makes a homepage-only tree legitimate.
+#   That pull request is open and unmerged, so wiring `lint:addresses` in now
+#   would install a check that CANNOT pass — and a gate that cannot go green is
+#   worse than no gate: it teaches everyone to merge past a red check.
+#
+#   ADD IT when package-build#80 has merged and this repository has taken the
+#   release carrying it. At that point all four are green and both steps below
+#   collapse into a single `npm run lint`, which already chains them.
+#
+# The three that DO run pass clean on the commit that added them, and they are
+# the whole of what a repository shaped like this one can be wrong about: its
+# prose formatting, its markdown structure, and whether its links land. The
+# fourth guards addresses, and there is only one address here to guard.
+#
+# Nothing here builds or compiles a pack. All three checks read the tree
+# directly, so this gate does not depend on `build:noci` and does not go red
+# when the pack compile does.
+name: Lint
+
+on:
+    pull_request:
+        types: [opened, reopened, synchronize]
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    lint:
+        name: Formatting, markdown, and links
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v7
+
+            - name: Setup Node
+              uses: actions/setup-node@v7
+              with:
+                  node-version: 24
+                  cache: npm
+
+            # The checks need only the toolchain; nothing here builds.
+            - name: Install dependencies
+              run: npm ci
+
+            # The shared Prettier configuration. `assets/packs/` is excluded in
+            # `.prettierignore` — that JSON is written by the compendium tooling
+            # at a 2-space indent the shared config would fight forever.
+            - name: Check formatting
+              run: npm run lint:format
+
+            # The shared markdownlint rule set: the document structure Prettier
+            # is indifferent to.
+            - name: Check markdown
+              run: npm run lint:markdown
+
+            # Every anchor link lands and every qualified address resolves.
+            - name: Check content links
+              run: npm run lint:content-links

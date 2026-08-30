@@ -35,6 +35,13 @@
         "deploy:qa": "run-s build push:qa",
         "deploy:prod": "run-s build push:prod",
         "deploy:release": "run-s build build:pack-release",
+        "format": "content-build format --write",
+        "lint": "run-s lint:format lint:markdown lint:addresses lint:content-links",
+        "lint:format": "content-build format",
+        "lint:markdown": "content-build markdown",
+        "lint:markdown:fix": "content-build markdown --fix",
+        "lint:addresses": "content-build lint",
+        "lint:content-links": "content-build links",
         "changeset": "changeset",
         "changeset:version": "changeset version && npm install --package-lock-only",
         "changeset:check": "changeset status --since=origin/main"
