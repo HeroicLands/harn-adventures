@@ -13,18 +13,18 @@ contentPackage: harnadventures
 packageKind: modules
 
 stats:
-    # No `systemId`, and no `relationships.systems` below. Both are deliberate
-    # and load-bearing: Foundry's `_testSupportedSystems` returns true only for
-    # a package that declares no systems, so naming `hm3` and `sohl` would make
-    # this module unavailable to a world running anything else — and the maps,
-    # journals and tables carry no system data, so it has real reach beyond the
-    # two systems it targets. The package therefore stamps no system version
-    # either (package-build#43).
-    lastModifiedBy: harnadvbuild0000
+  # No `systemId`, and no `relationships.systems` below. Both are deliberate
+  # and load-bearing: Foundry's `_testSupportedSystems` returns true only for
+  # a package that declares no systems, so naming `hm3` and `sohl` would make
+  # this module unavailable to a world running anything else — and the maps,
+  # journals and tables carry no system data, so it has real reach beyond the
+  # two systems it targets. The package therefore stamps no system version
+  # either (package-build#43).
+  lastModifiedBy: harnadvbuild0000
 
 compatibility:
-    minimum: "12"
-    verified: "14"
+  minimum: "12"
+  verified: "14"
 
 # One pack, and it declares **no** `system`. An Adventure pack that names one is
 # hidden from every other system — and worse, `Adventure.fromSource()` silently
@@ -32,10 +32,10 @@ compatibility:
 # of these documents entirely and ship from their own per-system Actor packs.
 # Those are not declared yet: `actors-hm3` and `actors-sohl` have no source.
 packs:
-    - name: adventures
-      label: Adventures
-      type: Adventure
-      prebuilt: assets/packs/adventure
+  - name: adventures
+    label: Adventures
+    type: Adventure
+    prebuilt: assets/packs/adventure
 
 # Both switches are a licensing decision, not a consequence of having nothing to
 # publish. This content is HârnFanon under Lythia's terms, so none of it — journal
@@ -59,8 +59,8 @@ packs:
 # both directions. Emitting one would let other packages cite these addresses and
 # make the module something the project needs to keep.
 publish:
-    site: homepage
-    manifests: { publish: false, consume: false }
+  site: homepage
+  manifests: { publish: false, consume: false }
 
 # Where the homepage is written — and, in `homepage` mode, the whole of it: the
 # page lands at `<out>/_index.md`, the package's own root. `out` is required and
@@ -69,46 +69,46 @@ publish:
 # matches the sibling convention (`sohl-thalorna` publishes from `site/content`),
 # and the emitted tree is a build artifact — it is gitignored, not committed.
 site:
-    out: site/content
+  out: site/content
 
 packageBuild:
-    assets:
-        - { from: assets/hm-adv-br, to: assets/hm-adv-br }
-        - { from: assets/hm-adv-sos, to: assets/hm-adv-sos }
-        - { from: assets/hm-cpn-earlsprogress, to: assets/hm-cpn-earlsprogress }
-        - { from: assets/hm-loc-charmic, to: assets/hm-loc-charmic }
-        - { from: assets/hm-loc-chewintin, to: assets/hm-loc-chewintin }
-        - { from: assets/hm-loc-drilen, to: assets/hm-loc-drilen }
-        - { from: assets/hm-loc-emerule, to: assets/hm-loc-emerule }
-        - { from: assets/hm-loc-erone, to: assets/hm-loc-erone }
-        - { from: assets/hm-loc-getha, to: assets/hm-loc-getha }
-        - { from: assets/hm-loc-hundholt, to: assets/hm-loc-hundholt }
-        - { from: assets/hm-loc-jedes, to: assets/hm-loc-jedes }
-        - { from: assets/hm-loc-ko, to: assets/hm-loc-ko }
-        - { from: assets/hm-loc-lethyl, to: assets/hm-loc-lethyl }
-        - { from: assets/hm-loc-ominstru, to: assets/hm-loc-ominstru }
-        - { from: assets/hm-loc-sbi, to: assets/hm-loc-sbi }
-        - { from: assets/hm-loc-tbb, to: assets/hm-loc-tbb }
-        - { from: LICENSE, to: LICENSE }
-        - { from: README.md, to: README.md }
+  assets:
+    - { from: assets/hm-adv-br, to: assets/hm-adv-br }
+    - { from: assets/hm-adv-sos, to: assets/hm-adv-sos }
+    - { from: assets/hm-cpn-earlsprogress, to: assets/hm-cpn-earlsprogress }
+    - { from: assets/hm-loc-charmic, to: assets/hm-loc-charmic }
+    - { from: assets/hm-loc-chewintin, to: assets/hm-loc-chewintin }
+    - { from: assets/hm-loc-drilen, to: assets/hm-loc-drilen }
+    - { from: assets/hm-loc-emerule, to: assets/hm-loc-emerule }
+    - { from: assets/hm-loc-erone, to: assets/hm-loc-erone }
+    - { from: assets/hm-loc-getha, to: assets/hm-loc-getha }
+    - { from: assets/hm-loc-hundholt, to: assets/hm-loc-hundholt }
+    - { from: assets/hm-loc-jedes, to: assets/hm-loc-jedes }
+    - { from: assets/hm-loc-ko, to: assets/hm-loc-ko }
+    - { from: assets/hm-loc-lethyl, to: assets/hm-loc-lethyl }
+    - { from: assets/hm-loc-ominstru, to: assets/hm-loc-ominstru }
+    - { from: assets/hm-loc-sbi, to: assets/hm-loc-sbi }
+    - { from: assets/hm-loc-tbb, to: assets/hm-loc-tbb }
+    - { from: LICENSE, to: LICENSE }
+    - { from: README.md, to: README.md }
 
-    manifest:
-        title: Hârn Adventures
-        description: >-
-            Fourteen ready-to-play adventures for HârnWorld, adapted from
-            fan-written works published on Lythia.com. Maps, journals and roll
-            tables carry no system data and import into any game system.
-        authors:
-            - name: Toasty
-              discord: toasty#8538
-              flags: {}
-        license: LICENSE
-        readme: README.md
-        packFolders:
-            - name: Hârn Adventures
-              sorting: m
-              color: "#5b2c1d"
-              packs:
-                  - adventures
-        flags:
-            allowBugReporter: true
+  manifest:
+    title: Hârn Adventures
+    description: >-
+      Fourteen ready-to-play adventures for HârnWorld, adapted from
+      fan-written works published on Lythia.com. Maps, journals and roll
+      tables carry no system data and import into any game system.
+    authors:
+      - name: Toasty
+        discord: toasty#8538
+        flags: {}
+    license: LICENSE
+    readme: README.md
+    packFolders:
+      - name: Hârn Adventures
+        sorting: m
+        color: "#5b2c1d"
+        packs:
+          - adventures
+    flags:
+      allowBugReporter: true
