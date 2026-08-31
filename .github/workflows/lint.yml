@@ -17,39 +17,39 @@
 name: Lint
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
-  workflow_dispatch:
+    pull_request:
+        types: [opened, reopened, synchronize]
+    workflow_dispatch:
 
 permissions:
-  contents: read
+    contents: read
 
 jobs:
-  lint:
-    name: Formatting, markdown, addresses, and links
-    runs-on: ubuntu-latest
+    lint:
+        name: Formatting, markdown, addresses, and links
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v7
 
-      - name: Setup Node
-        uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: npm
+            - name: Setup Node
+              uses: actions/setup-node@v7
+              with:
+                  node-version: 24
+                  cache: npm
 
-      # The checks need only the toolchain; nothing here builds.
-      - name: Install dependencies
-        run: npm ci
+            # The checks need only the toolchain; nothing here builds.
+            - name: Install dependencies
+              run: npm ci
 
-      # `run-s lint:format lint:markdown lint:addresses lint:content-links`
-      # — the shared Prettier configuration (`assets/packs/` excluded in
-      # `.prettierignore`, because that JSON is written by the compendium
-      # tooling at a 2-space indent the shared config would fight
-      # forever), the shared markdownlint rule set, the address and
-      # frontmatter rules, and every anchor and qualified address.
-      # `run-s` stops at the first failure, so the log names the check
-      # that went red.
-      - name: Lint
-        run: npm run lint
+            # `run-s lint:format lint:markdown lint:addresses lint:content-links`
+            # — the shared Prettier configuration (`assets/packs/` excluded in
+            # `.prettierignore`, because that JSON is written by the compendium
+            # tooling at a 2-space indent the shared config would fight
+            # forever), the shared markdownlint rule set, the address and
+            # frontmatter rules, and every anchor and qualified address.
+            # `run-s` stops at the first failure, so the log names the check
+            # that went red.
+            - name: Lint
+              run: npm run lint
