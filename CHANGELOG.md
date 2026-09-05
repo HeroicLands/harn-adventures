@@ -1,5 +1,59 @@
 # harn-adventures
 
+## 0.1.0
+
+### Minor Changes
+
+- 5805a59: **Every build now emits this package's content index.** `build:db` gains
+  `build:content-index`, so `build/content-index/harnadventures.jsonl` is produced
+  whenever the content is built rather than whenever someone remembers to run the
+  command by hand.
+
+  Nothing generated it before — in this repository or any other — so the artifact
+  existed only where a person had run `content-build content-index` themselves,
+  and was as fresh as the last time they did. The editor tooling reads it, and
+  compiled JournalEntry links resolve through it, so "as fresh as someone
+  remembered" is not a state it can be in.
+
+  1 note(s), and the file lands under `build/`, which is gitignored.
+
+- e4e1736: **This repository moves to `@heroiclands/package-build@^16.0.0`**, seven majors
+  on from `^9.0.0`. The declared range becomes `^16.0.0` and the lockfile
+  resolves it; a caret does not cross a major, so Dependabot could never have
+  offered any of them.
+
+  One content change comes with it: `assets/content/homepage.md` gains
+  `shortcode: root`. A `type: homepage` note is an ordinary addressed note since
+  11.0.0 — published at `/<package>/homepage-<shortcode>/`, which is where
+  `[[homepage-<shortcode>|Text]]` lands — and `root` is the shortcode every
+  package's landing uses.
+
+  `npm run lint` passes.
+
+- 6aaab6a: **This repository moves to `@heroiclands/package-build@^17.2.0`**, the version
+  whose content-index records carry a `foundry` block.
+
+  Each record gains the UUID and anchor map the link manifest holds, and an item
+  note emits a second record for its documentation journal — a document in its own
+  right, with its own canonical address, so it is addressable by the same lookup
+  as anything else rather than nested inside the item's record.
+
+  `build/content-index/harnadventures.jsonl` is already emitted on every build; this is
+  what makes it carry Foundry addresses as well as content.
+
+  Verified: 1 record, the homepage, which compiles to no Foundry document.
+
+### Patch Changes
+
+- 46cbdef: **This repository moves to `@heroiclands/package-build@^17.0.0`**, whose major
+  implements the content format the package publishes — five documented types
+  that reached no schema, and three documented `data` properties that reached no
+  vocabulary.
+
+  Nothing here changes: this tree authors none of the affected types or
+  properties, and `npm run lint` passes before and after. Taken to stay current
+  with the toolchain rather than to fix anything.
+
 ## 0.0.1
 
 ### Patch Changes
