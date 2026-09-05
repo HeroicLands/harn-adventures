@@ -19,7 +19,7 @@
         "build": "npm ci && npm run build:noci",
         "build:local": "npm i && npm run build:noci",
         "build:noci": "run-s build:db build:module",
-        "build:db": "run-s build:assets build:compiledb",
+        "build:db": "run-s build:assets build:compiledb build:content-index",
         "build:assets": "package-build assets",
         "build:compiledb": "content-build package compile",
         "build:unpackdb": "content-build package unpack",
@@ -44,7 +44,8 @@
         "lint:content-links": "content-build links",
         "changeset": "changeset",
         "changeset:version": "changeset version && npm install --package-lock-only",
-        "changeset:check": "changeset status --since=origin/main"
+        "changeset:check": "changeset status --since=origin/main",
+        "build:content-index": "content-build content-index"
     },
     "devDependencies": {
         "@changesets/cli": "^3.0.1",
