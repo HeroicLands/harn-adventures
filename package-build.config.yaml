@@ -55,12 +55,13 @@ packs:
 # describing the module discloses nothing licensed, and it creates no dependency:
 # nothing has to resolve through it, so withdrawing the module costs a page.
 #
-# The manifest is where the dependency edge would be, which is why it stays off in
-# both directions. Emitting one would let other packages cite these addresses and
-# make the module something the project needs to keep.
+# The cross-package link manifest is gone (package-build 18): a package publishes
+# its own content index and a consumer fetches the ones it declares as
+# dependencies, so there is no publish/consume switch to set. The dependency edge
+# this repository was avoiding is now simply the absence of a declaration —
+# nothing cites these addresses unless it names this module as a dependency.
 publish:
     site: homepage
-    manifests: { publish: false, consume: false }
 
 # Where the homepage is written — and, in `homepage` mode, the whole of it: the
 # page lands at `<out>/_index.md`, the package's own root. `out` is required and
