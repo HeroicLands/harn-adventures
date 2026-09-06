@@ -18,7 +18,7 @@
         "distclean": "package-build clean --distclean",
         "build": "npm ci && npm run build:noci",
         "build:local": "npm i && npm run build:noci",
-        "build:noci": "run-s build:db build:module",
+        "build:noci": "run-s lint build:db build:module",
         "build:db": "run-s build:assets build:compiledb build:content-index",
         "build:assets": "package-build assets",
         "build:compiledb": "content-build package compile",
@@ -36,7 +36,7 @@
         "deploy:prod": "run-s build push:prod",
         "deploy:release": "run-s build build:pack-release",
         "format": "content-build format --write",
-        "lint": "run-s lint:format lint:markdown lint:addresses lint:content-links",
+        "lint": "run-s lint:format lint:markdown lint:addresses lint:content-links lint:labels",
         "lint:format": "content-build format",
         "lint:markdown": "content-build markdown",
         "lint:markdown:fix": "content-build markdown --fix",
@@ -45,7 +45,8 @@
         "changeset": "changeset",
         "changeset:version": "changeset version && npm install --package-lock-only",
         "changeset:check": "changeset status --since=origin/main",
-        "build:content-index": "content-build content-index"
+        "build:content-index": "content-build content-index",
+        "lint:labels": "package-build labels check"
     },
     "devDependencies": {
         "@changesets/cli": "^3.0.1",
