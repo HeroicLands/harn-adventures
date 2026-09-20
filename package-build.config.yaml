@@ -63,14 +63,28 @@ packs:
 publish:
     site: homepage
 
-# Where the homepage is written — and, in `homepage` mode, the whole of it: the
-# page lands at `<out>/_index.md`, the package's own root. `out` is required and
-# is not defaulted: the directory is wiped on every run, and an unset one resolves
-# to the repository root, so the build refuses to continue without it. The path
-# matches the sibling convention (`sohl-thalorna` publishes from `site/content`),
-# and the emitted tree is a build artifact — it is gitignored, not committed.
+# The host every package's imagery is served from — carried into the generated
+# Hugo configuration as `params.cdnBaseURL`, which the theme resolves a relative
+# asset path against.
+#
+# The "page not found" wording: this is a one-page site, so every route below
+# but the first leaves for somewhere else — the honest answer rather than a
+# padded one.
 site:
-    out: site/content
+    assets: https://cdn.heroiclands.org
+    notfound:
+        tagline: This module has one page, and it is not at
+        sitenoun: module
+        links:
+            - title: Hârn Adventures
+              url: /
+              text: What this module carries, and how to install it.
+            - title: Modules
+              url: https://www.heroiclands.org/projects/modules/
+              text: The other modules published here.
+            - title: Lythia.com
+              url: https://www.lythia.com/
+              text: The fan site the works adapted here were published on.
 
 packageBuild:
     assets:
@@ -95,10 +109,6 @@ packageBuild:
 
     manifest:
         title: Hârn Adventures
-        description: >-
-            Fourteen ready-to-play adventures for HârnWorld, adapted from
-            fan-written works published on Lythia.com. Maps, journals and roll
-            tables carry no system data and import into any game system.
         authors:
             - name: Toasty
               discord: toasty#8538
