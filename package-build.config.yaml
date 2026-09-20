@@ -72,6 +72,8 @@ publish:
 # padded one.
 site:
     assets: https://cdn.heroiclands.org
+    # description feeds the site's <meta name="description">
+    description: Fourteen ready-to-play adventures for HârnWorld, adapted from fan-written works published on Lythia.com.
     notfound:
         tagline: This module has one page, and it is not at
         sitenoun: module
@@ -109,6 +111,11 @@ packageBuild:
 
     manifest:
         title: Hârn Adventures
+        # descriptionHtml feeds the Foundry package browser
+        descriptionHtml: >-
+            Fourteen ready-to-play adventures for HârnWorld, adapted from
+            fan-written works published on Lythia.com. Maps, journals and
+            roll tables carry no system data and import into any game system.
         authors:
             - name: Toasty
               discord: toasty#8538
