@@ -29,15 +29,9 @@ packs:
       type: Adventure
       prebuilt: assets/packs/adventure
 
-# Both switches are a licensing decision, not a consequence of having nothing to
-# publish: this content is HârnFanon under Lythia's terms, so none of it —
-# journal text, artwork, item descriptions, compiled notes — is ever published
-# to heroiclands.org. `site: homepage` is what enforces that boundary in code
-# rather than leaving it to a configuration that happens to be empty.
-#
-# The homepage at https://www.heroiclands.org/harnadventures/ is authored as
-# `assets/content/homepage.md`, the only page this build emits; naming the
-# module there discloses nothing licensed and creates no dependency.
+# The content tree holds the homepage note and nothing else, so the site is
+# that one page. It is authored as `assets/content/homepage.md`, published at
+# https://www.heroiclands.org/harnadventures/.
 publish:
     site: homepage
 
