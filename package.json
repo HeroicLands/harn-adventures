@@ -4,6 +4,10 @@
     "private": true,
     "description": "Hârn Adventures — seventeen fan-written HârnWorld works as fourteen Foundry VTT adventures",
     "license": "CC-BY-NC-SA-4.0",
+    "author": {
+        "name": "Tom Rodriguez",
+        "email": "toasty@heroiclands.org"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/HeroicLands/harn-adventures.git"
@@ -11,7 +15,7 @@
     "bugs": {
         "url": "https://github.com/HeroicLands/harn-adventures/issues"
     },
-    "homepage": "https://github.com/HeroicLands/harn-adventures#readme",
+    "homepage": "https://www.heroiclands.org/harnadventures/",
     "type": "module",
     "scripts": {
         "prepare": "git config core.hooksPath node_modules/@heroiclands/package-build/githooks || true",
@@ -20,14 +24,17 @@
         "build": "npm ci && npm run build:noci",
         "build:local": "npm i && npm run build:noci",
         "build:noci": "run-s lint build:db build:module",
+        "build:deps": "content-build deps fetch",
         "build:db": "run-s build:content-index build:assets build:compiledb",
         "build:assets": "package-build assets",
         "build:compiledb": "content-build package compile",
         "build:unpackdb": "content-build package unpack",
         "build:module": "package-build manifest",
-        "build:site": "run-s build:site-content build:site-html",
+        "build:site": "run-s build:deps build:site-content build:site-html build:site-root",
         "build:site-content": "content-build site",
-        "build:site-html": "hugo --source site --minify --gc --cleanDestinationDir",
+        "build:site-html": "hugo --source build/hugo --minify --gc --cleanDestinationDir",
+        "build:site-root": "package-build site-root",
+        "serve:site": "npm run build:site-content && hugo server --source build/hugo",
         "build:pack-release": "package-build release",
         "push:dev": "package-build deploy dev",
         "push:qa": "package-build deploy qa",
@@ -52,7 +59,7 @@
     "devDependencies": {
         "@changesets/cli": "^3.0.2",
         "@heroiclands/hugo-theme": "^0.6.0",
-        "@heroiclands/package-build": "^21.2.0",
+        "@heroiclands/package-build": "^22.1.0",
         "npm-run-all": "^4.1.5"
     }
 }

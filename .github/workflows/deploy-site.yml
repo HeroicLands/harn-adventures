@@ -10,9 +10,9 @@
 #
 # The build itself is also this repository's — the shared workflow runs
 # `npm run build:site` and knows nothing about what that script does. It only
-# requires the tree land under `build/site/harnadventures/`, which is what
-# `site/hugo.toml`'s `publishDir` arranges. The prefix comes from
-# `contentPackage`, not from the repository name.
+# requires the tree land under `build/site/harnadventures/`, which is what the
+# generated `build/hugo/hugo.toml`'s `publishDir` arranges. The prefix comes
+# from `contentPackage`, not from the repository name.
 #
 # NO `min-pages` / `max-pages`. `package-build.config.yaml` declares
 # `publish.site: homepage`, and in that mode the shared workflow fixes the bound
@@ -24,12 +24,12 @@
 # the guard and the build cannot come to disagree about what this package
 # publishes.
 #
-# NO `_headers` file in this repository either. Pages reads it only at the
-# deployment root, to mark the project's own *.pages.dev and
-# harnadventures.pkg.heroiclands.org hostnames noindex so they do not compete
-# with the canonical address — and since that content is the same for every
-# package, the shared workflow writes the default when a build produces none
-# (HeroicLands/.github#7).
+# `package-build site-root` writes `_headers` and `_redirects` at the
+# deployment root as part of `npm run build:site`, marking the project's own
+# *.pages.dev and harnadventures.pkg.heroiclands.org hostnames noindex so they
+# do not compete with the canonical address. The shared workflow's own default
+# `_headers` step is a fallback for a build that writes none; this one always
+# does, so that step leaves it untouched.
 name: Deploy the Hârn Adventures site to Cloudflare Pages
 
 on:
