@@ -40,6 +40,7 @@ publish:
 # padded one.
 site:
     assets: https://cdn.heroiclands.org
+    search: false
     description: Fourteen ready-to-play adventures for HârnWorld, adapted from fan-written works published on Lythia.com.
     notfound:
         tagline: This module has one page, and it is not at
