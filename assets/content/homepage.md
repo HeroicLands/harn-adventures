@@ -1,6 +1,6 @@
 ---
-type: homepage
 shortcode: root
+type: homepage
 ---
 
 Hârn Adventures is a collection module for [Foundry VTT](https://foundryvtt.com/).
