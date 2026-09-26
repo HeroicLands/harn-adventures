@@ -1,5 +1,117 @@
 # harn-adventures
 
+## 0.1.0
+
+### Minor Changes
+
+Nothing generated it before — in this repository or any other — so the artifact
+existed only where a person had run `content-build content-index` themselves,
+and was as fresh as the last time they did. The editor tooling reads it, and
+compiled JournalEntry links resolve through it, so "as fresh as someone
+remembered" is not a state it can be in.
+
+1 note(s), and the file lands under `build/`, which is gitignored.
+
+One content change comes with it: `assets/content/homepage.md` gains
+`shortcode: root`. A `type: homepage` note is an ordinary addressed note since
+11.0.0 — published at `/<package>/homepage-<shortcode>/`, which is where
+`[[homepage-<shortcode>|Text]]` lands — and `root` is the shortcode every
+package's landing uses.
+
+`npm run lint` passes.
+
+Each record gains the UUID and anchor map the link manifest holds, and an item
+note emits a second record for its documentation journal — a document in its own
+right, with its own canonical address, so it is addressable by the same lookup
+as anything else rather than nested inside the item's record.
+
+`build/content-index/harnadventures.jsonl` is already emitted on every build; this is
+what makes it carry Foundry addresses as well as content.
+
+Verified: 1 record, the homepage, which compiles to no Foundry document.
+
+**Every build now emits this package's content index.** `build:db` gains
+`build:content-index`, so `build/content-index/harnadventures.jsonl` is produced
+whenever the content is built rather than whenever someone remembers to run the
+command by hand.
+
+**This repository moves to `@heroiclands/package-build@^16.0.0`**, seven majors
+on from `^9.0.0`. The declared range becomes `^16.0.0` and the lockfile
+resolves it; a caret does not cross a major, so Dependabot could never have
+offered any of them.
+
+**This repository moves to `@heroiclands/package-build@^17.2.0`**, the version
+whose content-index records carry a `foundry` block.
+
+### Patch Changes
+
+What differs between them is only what they have to check: `lint:lang` appears
+where there is a `lang/` tree and not otherwise, because a step with nothing to
+check is a green tick that means nothing.
+
+- **`lint:labels` is `package-build labels check`**, the shared command, rather
+  than a `utils/check-labels.mjs` copied per repository — the shape a shared
+  check takes just before its copies start disagreeing.
+
+- **The workflow runs named steps** rather than one `npm run lint`. The chain is
+  `run-s`, which stops at the first failure, so a single step reports whichever
+  check failed first and says nothing about the rest — which is exactly how
+  checks came to have a state nobody knew. Each step runs under
+  `if: !cancelled()`, so a red run is a worklist rather than a wall.
+
+- **A second job compiles the packs**, so a note that lints clean but fails to
+  compile is caught on the pull request rather than on the release after it. It
+  is a separate job because it is the only check that reaches the network.
+
+All five checks pass. `build:noci` did not run `lint` at all before this, so the release path checked nothing.
+
+Nothing here changes: this tree authors none of the affected types or
+properties, and `npm run lint` passes before and after. Taken to stay current
+with the toolchain rather than to fix anything.
+
+Nothing in the collection changes. The adventures ship as finished Foundry
+documents whose image paths pass straight through, and the only authored note is
+the homepage, which names no artwork. Taken to stay current with the toolchain.
+
+**This repository moves to `@heroiclands/package-build@^21.0.0` and
+`@heroiclands/hugo-theme@^0.6.0`.** The two travel together: the toolchain emits
+the infobox data the theme's generic renderer draws.
+
+Nothing in the collection changes. The pathname rule the toolchain major
+introduces governs authored notes, and the only note here is the homepage, which
+names no artwork; the fourteen adventures ship as finished Foundry documents
+whose image paths pass straight through. Taken to stay current with the
+toolchain rather than to fix anything.
+
+The module's Foundry listing and the site's meta description are each written
+for their own reader. The Foundry browser shows `descriptionHtml` from
+`package-build.config.yaml`, while the website uses `site.description` from the
+same file. `package.json`'s `description` key is removed — it is read by nothing
+now, and the toolchain warns if it is present. Taken to stay current with the
+toolchain.
+
+Nothing in the module changes — installing it in Foundry is unchanged. The
+website's header navigation now reads from the organisation's shared menu
+alongside every other HeroicLands site, and the site now carries a
+`sitemap.xml`. Taken to stay current with the toolchain.
+
+**One CI shape across the four content repositories.** `.github/workflows/lint.yml`
+is the same file in each, the `lint` chain runs the same checks in the same
+order, and `build:noci` runs `lint` before it builds anything.
+
+**This repository moves to `@heroiclands/package-build@^17.0.0`**, whose major
+implements the content format the package publishes — five documented types
+that reached no schema, and three documented `data` properties that reached no
+vocabulary.
+
+**This collection moves to `@heroiclands/package-build@^21.2.0`.**
+
+**This collection moves to `@heroiclands/package-build@^22.2.0`.**
+
+**Website** — The module's page is at `/harnadventures/`.
+
+**This collection moves to `@heroiclands/package-build@^22.1.0`.**
+
 ## 0.0.1
 
 ### Patch Changes
