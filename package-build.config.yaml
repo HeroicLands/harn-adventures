@@ -29,12 +29,6 @@ packs:
       type: Adventure
       prebuilt: assets/packs/adventure
 
-# The content tree holds the homepage note and nothing else, so the site is
-# that one page. It is authored as `assets/content/homepage.md`, published at
-# https://www.heroiclands.org/harnadventures/.
-publish:
-    site: homepage
-
 # The "page not found" wording: this is a one-page site, so every route below
 # but the first leaves for somewhere else — the honest answer rather than a
 # padded one.
