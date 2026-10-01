@@ -1,7 +1,7 @@
 /**
  * This repository's Prettier configuration — the shared one it already uses.
  *
- * `content-build format` applies the shared options directly, so the lint chain
+ * `package-build format` applies the shared options directly, so the lint chain
  * was already correct without this file. Nothing else was. Prettier's editor
  * integrations, and a bare `npx prettier` run, resolve a *config file* and
  * silently fall back to Prettier's own defaults when they find none — which

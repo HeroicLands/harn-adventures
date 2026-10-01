@@ -81,7 +81,7 @@
 - fa118aa: Adopt `@heroiclands/package-build` 9.0.0.
 
   The shared `printWidth` moves from 80 to 100. Nothing in this tree moves with
-  it: the content here is a single homepage note, and both `content-build format`
+  it: the content here is a single homepage note, and both `package-build format`
   and a raw Prettier run already agree the tree is clean.
 
   The bump is taken anyway so this repository stays on the same toolchain version
@@ -109,12 +109,12 @@
 
   | script               | command                        | what it checks                                  |
   | -------------------- | ------------------------------ | ----------------------------------------------- |
-  | `lint:format`        | `content-build format`         | the shared Prettier configuration               |
-  | `format`             | `content-build format --write` | rewrites what `lint:format` reports             |
-  | `lint:markdown`      | `content-build markdown`       | the shared markdownlint rule set                |
-  | `lint:markdown:fix`  | `content-build markdown --fix` | applies the fixes markdownlint can make         |
-  | `lint:addresses`     | `content-build lint`           | every note's address and frontmatter            |
-  | `lint:content-links` | `content-build links`          | every anchor link lands, every address resolves |
+  | `lint:format`        | `package-build format`         | the shared Prettier configuration               |
+  | `format`             | `package-build format --write` | rewrites what `lint:format` reports             |
+  | `lint:markdown`      | `package-build markdown`       | the shared markdownlint rule set                |
+  | `lint:markdown:fix`  | `package-build markdown --fix` | applies the fixes markdownlint can make         |
+  | `lint:addresses`     | `package-build lint`           | every note's address and frontmatter            |
+  | `lint:content-links` | `package-build links`          | every anchor link lands, every address resolves |
   | `lint`               | `run-s` over the four checks   | —                                               |
 
   One name per command: `format:check` is not declared, because it is a second
@@ -126,7 +126,7 @@
   **Prettier does not own `assets/packs/`.** Fourteen of the fifteen findings the
   formatter reported were the module's prebuilt Adventure documents — the compiled
   compendium source `packs[].prebuilt` points the build at, written by the Foundry
-  compendium tooling rather than by hand. `content-build package unpack` emits them
+  compendium tooling rather than by hand. `package-build package unpack` emits them
   with `JSON.stringify(…, null, 2)`; the shared configuration is `tabWidth: 4`, so
   formatting them would put the two writers permanently at odds and every
   re-extract would revert the format and re-redden the check. The churn is not
