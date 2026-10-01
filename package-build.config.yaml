@@ -16,7 +16,7 @@ stats:
     lastModifiedBy: harnadvbuild0000
 
 compatibility:
-    minimum: "12"
+    minimum: "14.359"
     verified: "14"
 
 # One pack, and it declares no `system`: an Adventure pack that names one is
