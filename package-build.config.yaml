@@ -17,8 +17,7 @@ stats:
 
 compatibility:
     minimum: "14.359"
-    verified: "14"
-
+    verified: "14.359"
 # One pack, and it declares no `system`: an Adventure pack that names one is
 # hidden from every other system. `Adventure.fromSource()` silently empties
 # `actors` and `items` when a pack declares none, so actors are kept out of
