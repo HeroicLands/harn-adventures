@@ -6,14 +6,12 @@
 # to `main`. Naming a managed label keeps the two from fighting.
 #
 # A package.json landed in #17, so the npm ecosystem now has something to
-# resolve. `@heroiclands/package-build` and `@heroiclands/hugo-theme` are each
-# their own ungrouped single-package entry, ordered ahead of the housekeeping
-# catch-all. Both sit below 1.0, where a **minor** bump is the breaking
-# release — `0.4.0` to `0.5.0` is the break, and the major-bump rule that would
-# otherwise isolate only majors never fires, because `1.0.0` never arrives. So
-# neither may be swept into a grouped pull request for any update type, and
-# the two are kept apart from each other as well, because a toolchain break
-# and a layout break are separate decisions. See #22.
+# resolve. `@heroiclands/package-build` is its own ungrouped single-package
+# entry, ordered ahead of the housekeeping catch-all. It sits below 1.0, where
+# a **minor** bump is the breaking release — `0.4.0` to `0.5.0` is the break,
+# and the major-bump rule that would otherwise isolate only majors never
+# fires, because `1.0.0` never arrives. So it may not be swept into a grouped
+# pull request for any update type. See #22.
 version: 2
 updates:
     - package-ecosystem: npm
@@ -36,9 +34,6 @@ updates:
           package-build:
               patterns:
                   - "@heroiclands/package-build"
-          hugo-theme:
-              patterns:
-                  - "@heroiclands/hugo-theme"
           production-minor-patch:
               dependency-type: production
               update-types:
