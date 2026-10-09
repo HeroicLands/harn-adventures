@@ -1,0 +1,24 @@
+name: Deploy the Hârn Adventures site to Cloudflare Pages
+
+# Deploying is gated by the repository variable HL_DEPLOY_ENABLED.
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    deploy:
+        uses: HeroicLands/.github/.gitea/workflows/deploy-package-site.yml@main
+        with:
+            # Not derived from the package name: renaming a live Pages project
+            # to fit a convention would break its deployment history.
+            project: harn-adventures
+        # By name, never `secrets: inherit` — inheriting would hand a workflow in
+        # another repository every secret this one holds for a job that needs two.
+        secrets:
+            CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+            CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
