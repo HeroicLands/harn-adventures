@@ -1,5 +1,21 @@
 # harn-adventures
 
+## 0.1.0
+
+### Minor Changes
+
+**Before you upgrade**
+
+- Requires Foundry VTT 14.359 or newer.
+
+**Foundry**
+
+- The module's entry in Foundry's package browser carries a description written for it.
+
+**Website**
+
+- The collection has its own page at [www.heroiclands.org/harnadventures/](https://www.heroiclands.org/harnadventures/), with the HeroicLands header and a sitemap.
+
 ## 0.0.1
 
 ### Patch Changes
