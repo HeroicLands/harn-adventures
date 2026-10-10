@@ -29,8 +29,8 @@ Hârn Adventures © 2020-2026 by Tom Rodriguez, Keléstia Productions Ltd, Colum
 Inc, and N. Robin Crossby is licensed under
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-This is an unofficial HârnWorld work — "[Fanon](https://www.lythia.com/about/publishing-fan-written-material/)"
-under Lythia.com's terms — created by Tom Rodriguez. It is a derivative work from
+This is an unofficial HârnWorld work—"[Fanon](https://www.lythia.com/about/publishing-fan-written-material/)"
+under Lythia.com's terms—created by Tom Rodriguez. It is a derivative work from
 material created by N. Robin Crossby and is released for free distribution and personal
 use without the permission or endorsement of N. Robin Crossby or his estate, Keléstia
 Productions Ltd, or Columbia Games Inc.
