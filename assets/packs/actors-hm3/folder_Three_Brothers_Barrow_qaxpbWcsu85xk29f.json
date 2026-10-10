@@ -1,0 +1,27 @@
+{
+  "name": "Three Brothers Barrow",
+  "type": "Actor",
+  "_id": "qaxpbWcsu85xk29f",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "5aae8a201645ade05d3db0b1f32603a872017d4e"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Folder.qaxpbWcsu85xk29f",
+    "duplicateSource": null,
+    "coreVersion": "14.367",
+    "systemId": "hm3",
+    "systemVersion": "1.6.3",
+    "createdTime": 1787709627057,
+    "modifiedTime": 1787709627057,
+    "lastModifiedBy": "qmkU9fXsDwwdDaM2",
+    "exportSource": null
+  },
+  "_key": "!folders!qaxpbWcsu85xk29f"
+}

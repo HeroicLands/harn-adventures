@@ -1,0 +1,27 @@
+{
+  "name": "Bloody Raven",
+  "type": "Actor",
+  "_id": "WxWh47laCJqgcp7p",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "c0b7184429964473407b707f1cce00fb8cfabfce"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Folder.WxWh47laCJqgcp7p",
+    "duplicateSource": null,
+    "coreVersion": "14.367",
+    "systemId": "hm3",
+    "systemVersion": "1.6.3",
+    "createdTime": 1787709697346,
+    "modifiedTime": 1787709697346,
+    "lastModifiedBy": "qmkU9fXsDwwdDaM2",
+    "exportSource": null
+  },
+  "_key": "!folders!WxWh47laCJqgcp7p"
+}

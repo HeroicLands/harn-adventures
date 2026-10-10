@@ -1,0 +1,27 @@
+{
+  "name": "Hundholt",
+  "type": "Actor",
+  "_id": "mdeJgc4a75X1slGR",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": null,
+  "flags": {
+    "scene-packer": {
+      "hash": "c32db2d84862940556852b0cd6ab26ba4bf53325"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Folder.mdeJgc4a75X1slGR",
+    "duplicateSource": null,
+    "coreVersion": "14.367",
+    "systemId": "hm3",
+    "systemVersion": "1.6.3",
+    "createdTime": 1787709660827,
+    "modifiedTime": 1787709660827,
+    "lastModifiedBy": "qmkU9fXsDwwdDaM2",
+    "exportSource": null
+  },
+  "_key": "!folders!mdeJgc4a75X1slGR"
+}
