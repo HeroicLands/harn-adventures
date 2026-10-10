@@ -18,7 +18,21 @@ stats:
 compatibility:
     minimum: "14.359"
     verified: "14.359"
-# One pack, and it declares no `system`: an Adventure pack that names one is
+
+# The systems the per-system Actor packs are stamped for. Two are declared so
+# that none becomes package-wide and stamps the Adventure pack; these are not
+# `relationships.systems` entries, so the module still installs under any system.
+systems:
+    hm3:
+        manifest: https://github.com/HeroicLands/HarnMaster-3-FoundryVTT/releases/download/v1.6.5/system.json
+        compatibility:
+            verified: "1.6.5"
+    sohl:
+        manifest: https://github.com/HeroicLands/Song-of-Heroic-Lands-FoundryVTT/releases/download/v0.8.8/system.json
+        compatibility:
+            verified: "0.8.8"
+
+# The Adventure pack declares no `system`: an Adventure pack that names one is
 # hidden from every other system. `Adventure.fromSource()` silently empties
 # `actors` and `items` when a pack declares none, so actors are kept out of
 # these documents entirely and ship from their own per-system Actor packs.
@@ -27,6 +41,11 @@ packs:
       label: Adventures
       type: Adventure
       prebuilt: assets/packs/adventure
+    - name: actors-hm3
+      label: Actors (HârnMaster 3)
+      type: Actor
+      system: hm3
+      prebuilt: assets/packs/actors-hm3
 
 # The "page not found" wording: this is a one-page site, so every route below
 # but the first leaves for somewhere else — the honest answer rather than a
@@ -88,5 +107,6 @@ packageBuild:
               color: "#5b2c1d"
               packs:
                   - adventures
+                  - actors-hm3
         flags:
             allowBugReporter: true
