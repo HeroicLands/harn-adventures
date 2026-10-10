@@ -9,8 +9,9 @@ setting, published on the fan site [Lythia.com](https://www.lythia.com/), and pr
 them as ready-to-play adventures, each one importable on its own.
 
 It is a module, not a game system: it installs into a world that is already running
-one. The documents it ships carry no system data, so they import into a world running
-any game system.
+one. The maps, journals and tables carry no system data, so they import into a world
+running any game system; the cast ships as actors for HârnMaster 3 and for Song of
+Heroic Lands.
 
 ## Install
 

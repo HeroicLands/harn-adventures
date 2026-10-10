@@ -1,5 +1,8 @@
-# This module ships fourteen finished Adventure documents rather than a content
-# tree, so `packs[].prebuilt` points the compile at the already-built JSON.
+# The fourteen Adventure documents and the HârnMaster 3 cast ship as finished
+# JSON, so `packs[].prebuilt` points the compile at them. The Song of Heroic
+# Lands cast is the one thing compiled from notes: a being note per character
+# under `assets/content/`, each pinning its HM3 counterpart's id with `data.id`
+# so the journals' `actors-sohl` links resolve.
 
 # `contentPackage` is `harnadventures`, without the hyphen `foundryPackage`
 # keeps (`harn-adventures`, from `package.json`) — a hyphen here would break
@@ -32,6 +35,22 @@ systems:
         compatibility:
             verified: "0.8.8"
 
+# The SoHL being notes embed their attributes, skills and gear by `model:`
+# address into the system's own Item catalog, which `itemCatalog: true` has
+# `deps fetch` extract from the pinned release. It sits under `recommends`
+# rather than `systems`: a `recommends` entry is advisory in Foundry and gates
+# nothing, so the module still installs under any system.
+relationships:
+    recommends:
+        - id: sohl
+          type: system
+          manifest: https://github.com/HeroicLands/Song-of-Heroic-Lands-FoundryVTT/releases/download/v0.8.8/system.json
+          compatibility:
+              verified: "0.8.8"
+          itemCatalog: true
+
+itemBuilders: [sohl]
+
 # The Adventure pack declares no `system`: an Adventure pack that names one is
 # hidden from every other system. `Adventure.fromSource()` silently empties
 # `actors` and `items` when a pack declares none, so actors are kept out of
@@ -46,17 +65,26 @@ packs:
       type: Actor
       system: hm3
       prebuilt: assets/packs/actors-hm3
+    - name: actors-sohl
+      label: Actors (Song of Heroic Lands)
+      type: Actor
+      system: sohl
+      default: true
+    # A being note's prose compiles into a JournalEntry beside its Actor, and
+    # the compile refuses a tree with nowhere to put it. The pack is undivided
+    # by system: a JournalEntry is not a system-specific document.
+    - name: journals
+      label: Cast Journals
+      type: JournalEntry
+      default: true
 
-# The "page not found" wording: this is a one-page site, so every route below
-# but the first leaves for somewhere else — the honest answer rather than a
-# padded one.
 site:
     assets: https://cdn.heroiclands.org
     search: false
     description: Fourteen ready-to-play adventures for HârnWorld, adapted from fan-written works published on Lythia.com.
     notfound:
-        tagline: This module has one page, and it is not at
-        sitenoun: module
+        tagline: This site has no page at
+        sitenoun: site
         links:
             - title: Hârn Adventures
               url: /
@@ -108,5 +136,7 @@ packageBuild:
               packs:
                   - adventures
                   - actors-hm3
+                  - actors-sohl
+                  - journals
         flags:
             allowBugReporter: true
