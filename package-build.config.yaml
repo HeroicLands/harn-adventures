@@ -7,6 +7,11 @@
 contentPackage: harnadventures
 packageKind: modules
 
+authors:
+    - name: Tom Rodriguez
+      email: toasty@heroiclands.org
+      discord: toasty#8538
+
 stats:
     # No `systemId` and no `relationships.systems`: Foundry's
     # `_testSupportedSystems` returns true only for a package that declares no
@@ -95,10 +100,6 @@ packageBuild:
             Fourteen ready-to-play adventures for HârnWorld, adapted from
             fan-written works published on Lythia.com. Maps, journals and
             roll tables carry no system data and import into any game system.
-        authors:
-            - name: Toasty
-              discord: toasty#8538
-              flags: {}
         license: LICENSE
         readme: README.md
         packFolders:
