@@ -17,8 +17,7 @@ data:
   appearance:
     eye_color: "grey"
     hair_color: "brown"
-    complexion: "attractive"
-    extra_features: ["Scar (right forearm)", "Moustache"]
+    extra_features: ["Scar (right forearm)", "Moustache", "Complexion: attractive"]
   packFolder: bloodyraven
 sohl:
   items:

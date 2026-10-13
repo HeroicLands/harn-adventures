@@ -14,7 +14,7 @@ data:
   height: '5'' 7"'
   weight: "119 lbs"
   frame: scant
-  appearance: {eye_color: "blue", hair_color: "blonde", complexion: "average", extra_features: []}
+  appearance: {eye_color: "blue", hair_color: "blonde", extra_features: ["Complexion: average"]}
   packFolder: bloodyraven
 sohl:
   items:

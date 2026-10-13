@@ -19,8 +19,7 @@ data:
     eye_color: "blue"
     hair_color: "brown"
     skin_color: "medium"
-    complexion: "beautiful"
-    extra_features: []
+    extra_features: ["Complexion: beautiful"]
   packFolder: hundholt
 sohl:
   items:

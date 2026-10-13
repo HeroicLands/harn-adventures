@@ -17,8 +17,7 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "blonde"
-    complexion: "attractive"
-    extra_features: ["Left handed", "Broken nose", "scars"]
+    extra_features: ["Left handed", "Broken nose", "scars", "Complexion: attractive"]
   packFolder: bloodyraven
 sohl:
   items:

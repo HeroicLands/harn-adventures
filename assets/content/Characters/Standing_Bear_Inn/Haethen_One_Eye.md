@@ -16,14 +16,14 @@ data:
   frame: heavy
   appearance:
     eye_color: "blue"
-    hair_color: "blond"
-    complexion: "plain"
+    hair_color: "blonde"
     extra_features:
       - "Missing left eye"
       - "scars on left side of his face"
       - "Beard"
       - "moustache"
       - "Scar (left side of face)"
+      - "Complexion: plain"
   packFolder: standingbearinn
 sohl:
   items:

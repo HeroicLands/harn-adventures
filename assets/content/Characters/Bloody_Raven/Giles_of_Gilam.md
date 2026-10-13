@@ -17,8 +17,7 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "red"
-    complexion: "average"
-    extra_features: ["Freckles"]
+    extra_features: ["Freckles", "Complexion: average"]
   packFolder: bloodyraven
 sohl:
   items:

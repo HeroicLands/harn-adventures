@@ -15,10 +15,9 @@ data:
   weight: "282 lbs"
   frame: heavy
   appearance:
-    eye_color: "gray"
+    eye_color: "grey"
     hair_color: "brown"
-    complexion: "plain"
-    extra_features: ["Obese", "left-handed"]
+    extra_features: ["Obese", "left-handed", "Complexion: plain"]
   packFolder: standingbearinn
 sohl:
   items:

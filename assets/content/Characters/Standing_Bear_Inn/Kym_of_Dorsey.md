@@ -16,9 +16,12 @@ data:
   frame: heavy
   appearance:
     eye_color: "hazel"
-    hair_color: "shaved bald"
-    complexion: "average"
-    extra_features: ["Poxmarks", "Poxmarks (healed)", "motion sickness"]
+    extra_features:
+      - "Poxmarks"
+      - "Poxmarks (healed)"
+      - "motion sickness"
+      - "Hair color: shaved bald"
+      - "Complexion: average"
   packFolder: standingbearinn
 sohl:
   items:

@@ -17,8 +17,7 @@ data:
   appearance:
     eye_color: "blue"
     hair_color: "black"
-    complexion: "average, medium complexion"
-    extra_features: ["Scars on both arms"]
+    extra_features: ["Scars on both arms", "Complexion: average, medium complexion"]
   packFolder: ashowerofsilver
 sohl:
   items:

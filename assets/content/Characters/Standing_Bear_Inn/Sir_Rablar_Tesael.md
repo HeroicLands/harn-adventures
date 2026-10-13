@@ -17,8 +17,12 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "black"
-    complexion: "average"
-    extra_features: ["Moustache", "goatee", "Ambidextrous", "alcoholic (Mild: Will x 5)"]
+    extra_features:
+      - "Moustache"
+      - "goatee"
+      - "Ambidextrous"
+      - "alcoholic (Mild: Will x 5)"
+      - "Complexion: average"
   packFolder: standingbearinn
 sohl:
   items:

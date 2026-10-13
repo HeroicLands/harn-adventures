@@ -16,8 +16,7 @@ data:
   appearance:
     eye_color: "green"
     hair_color: "black"
-    complexion: "attractive"
-    extra_features: ["Scar on face"]
+    extra_features: ["Scar on face", "Complexion: attractive"]
   packFolder: standingbearinn
 sohl:
   items:

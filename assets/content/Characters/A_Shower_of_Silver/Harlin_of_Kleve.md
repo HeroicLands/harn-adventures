@@ -16,8 +16,7 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "brown"
-    complexion: "medium complexion, average comeliness"
-    extra_features: []
+    extra_features: ["Complexion: medium complexion, average comeliness"]
   packFolder: ashowerofsilver
 sohl:
   items:

@@ -17,8 +17,7 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "brown"
-    complexion: "average"
-    extra_features: ["Left handed", "Left-handed"]
+    extra_features: ["Left handed", "Left-handed", "Complexion: average"]
   packFolder: bloodyraven
 sohl:
   items:
