@@ -17,13 +17,9 @@ data:
   appearance:
     eye_color: "blue"
     hair_color: "blonde"
-    extra_features:
-      - "Missing left eye"
-      - "scars on left side of his face"
-      - "Beard"
-      - "moustache"
-      - "Scar (left side of face)"
-      - "Complexion: plain"
+    skin_color: "fair"
+    complexion: ["scarred"]
+    extra_features: ["Missing left eye", "scars on left side of his face", "Beard", "moustache"]
   packFolder: standingbearinn
 sohl:
   items:

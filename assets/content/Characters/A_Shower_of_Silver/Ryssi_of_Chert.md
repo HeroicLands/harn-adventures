@@ -16,10 +16,9 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "black"
-    extra_features:
-      - "Birthmark on neck"
-      - "Arachnophobia (mild): afraid of spiders"
-      - "Complexion: fair complexion, average comeliness"
+    skin_color: "fair"
+    complexion: []
+    extra_features: ["Birthmark on neck"]
   packFolder: ashowerofsilver
 sohl:
   items:

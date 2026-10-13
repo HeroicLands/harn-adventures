@@ -14,7 +14,12 @@ data:
   height: '5'' 9"'
   weight: "157 lbs"
   frame: medium
-  appearance: {eye_color: "green", hair_color: "brown", extra_features: ["Complexion: attractive"]}
+  appearance:
+    eye_color: "green"
+    hair_color: "brown"
+    skin_color: "medium"
+    complexion: ["clear"]
+    extra_features: []
   packFolder: bloodyraven
 sohl:
   items:

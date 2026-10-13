@@ -17,7 +17,9 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "dark_blonde"
-    extra_features: ["Stutterer", "Moustache", "beard", "Complexion: attractive"]
+    skin_color: "fair"
+    complexion: ["clear"]
+    extra_features: ["Moustache", "beard"]
   packFolder: bloodyraven
 sohl:
   items:

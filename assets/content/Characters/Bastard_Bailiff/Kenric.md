@@ -11,6 +11,7 @@ data:
   gender: male
   occupation: "Mercenary - Medium Foot"
   packFolder: bastardbailiff
+  appearance: {complexion: []}
 sohl:
   items:
     - {model: sohl-sohl-attribute-str, system: {scoreBase: 12}}

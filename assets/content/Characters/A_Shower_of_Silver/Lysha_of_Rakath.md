@@ -17,11 +17,9 @@ data:
   appearance:
     eye_color: "blue"
     hair_color: "blonde"
-    extra_features:
-      - "Scar across left cheecki"
-      - "Scar across left cheek"
-      - "Scar on Left Cheek"
-      - "Complexion: fair complexion, average comeliness"
+    skin_color: "fair"
+    complexion: ["scarred"]
+    extra_features: ["Scar across left cheek"]
   packFolder: ashowerofsilver
 sohl:
   items:

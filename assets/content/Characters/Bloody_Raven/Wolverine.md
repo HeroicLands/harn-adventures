@@ -4,7 +4,12 @@ name: {full: "Wolverine", aliases: []}
 type: being
 subType: creature
 tags: [draft]
-data: {id: 9EMwIvbllpyY0HuE, templatePriority: null, archetypes: [], packFolder: bloodyraven}
+data:
+  id: 9EMwIvbllpyY0HuE
+  templatePriority: null
+  archetypes: []
+  packFolder: bloodyraven
+  appearance: {complexion: []}
 sohl:
   items:
     - {model: sohl-sohl-attribute-str, system: {scoreBase: 14}}

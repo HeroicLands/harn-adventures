@@ -17,7 +17,9 @@ data:
   appearance:
     eye_color: "green"
     hair_color: "brown"
-    extra_features: ["Complexion: dark complexion, attractive comeliness"]
+    skin_color: "dark"
+    complexion: ["clear"]
+    extra_features: []
   packFolder: ashowerofsilver
 sohl:
   items:

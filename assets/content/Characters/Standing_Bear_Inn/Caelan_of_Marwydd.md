@@ -17,7 +17,9 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "black"
-    extra_features: ["Musophobia (fear of mice/rats)", "Moderate (Will x3)", "Complexion: average"]
+    skin_color: "dark"
+    complexion: ["clear"]
+    extra_features: []
   packFolder: standingbearinn
 sohl:
   items:

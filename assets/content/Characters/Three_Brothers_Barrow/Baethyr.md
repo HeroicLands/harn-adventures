@@ -9,6 +9,7 @@ data:
   templatePriority: null
   archetypes: []
   packFolder: threebrothersbarrow
+  appearance: {complexion: []}
 sohl:
   items:
     - {model: sohl-sohl-attribute-str, system: {scoreBase: 10}}

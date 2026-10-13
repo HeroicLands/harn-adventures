@@ -11,6 +11,7 @@ data:
   gender: male
   occupation: "Guard (Medium Foot)"
   packFolder: ashowerofsilver
+  appearance: {complexion: []}
 sohl:
   items:
     - {model: sohl-sohl-attribute-str, system: {scoreBase: 14}}

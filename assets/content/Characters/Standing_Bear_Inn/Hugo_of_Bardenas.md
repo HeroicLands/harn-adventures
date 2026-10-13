@@ -16,12 +16,9 @@ data:
   frame: heavy
   appearance:
     eye_color: "green"
-    extra_features:
-      - "Obese"
-      - "bad right knee (Agility reduced)"
-      - "homosexual"
-      - "Hair color: brown / grey"
-      - "Complexion: average"
+    skin_color: "medium"
+    complexion: ["clear"]
+    extra_features: ["Obese"]
   packFolder: standingbearinn
 sohl:
   items:

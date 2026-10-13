@@ -17,7 +17,9 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "blonde"
-    extra_features: ["Left handed", "Broken nose", "scars", "Complexion: attractive"]
+    skin_color: "fair"
+    complexion: ["rough", "scarred"]
+    extra_features: ["Broken nose", "scars on his forehead", "calloused hands"]
   packFolder: bloodyraven
 sohl:
   items:

@@ -17,7 +17,9 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "white"
-    extra_features: ["Scars", "senility", "arthritis", "gout", "Complexion: average"]
+    skin_color: "medium"
+    complexion: ["scarred"]
+    extra_features: []
   packFolder: standingbearinn
 sohl:
   items:

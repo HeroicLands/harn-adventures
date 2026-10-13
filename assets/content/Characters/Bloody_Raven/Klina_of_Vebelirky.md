@@ -17,14 +17,9 @@ data:
   appearance:
     eye_color: "hazel"
     hair_color: "grey"
-    extra_features:
-      - "Constantly sneezing around dogs"
-      - "cats"
-      - "Beard"
-      - "moustache"
-      - "Allergy (dogs"
-      - "cats)"
-      - "Complexion: plain"
+    skin_color: "medium"
+    complexion: ["clear"]
+    extra_features: ["Beard", "moustache"]
   packFolder: bloodyraven
 sohl:
   items:

@@ -14,7 +14,12 @@ data:
   height: '5'' 4"'
   weight: "137 lbs"
   frame: medium
-  appearance: {eye_color: "grey", hair_color: "blonde", extra_features: ["Complexion: attractive"]}
+  appearance:
+    eye_color: "grey"
+    hair_color: "blonde"
+    skin_color: "fair"
+    complexion: ["clear"]
+    extra_features: []
   packFolder: standingbearinn
 sohl:
   items:

@@ -19,7 +19,8 @@ data:
     eye_color: "hazel"
     hair_color: "brown"
     skin_color: "dark"
-    extra_features: ["Complexion: average"]
+    complexion: ["clear"]
+    extra_features: []
   packFolder: hundholt
 sohl:
   items:

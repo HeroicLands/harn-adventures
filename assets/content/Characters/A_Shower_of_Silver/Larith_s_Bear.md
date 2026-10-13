@@ -4,7 +4,12 @@ name: {full: "Larith's Bear", aliases: []}
 type: being
 subType: creature
 tags: [draft]
-data: {id: lvRvYtkBE1yoCvsJ, templatePriority: null, archetypes: [], packFolder: ashowerofsilver}
+data:
+  id: lvRvYtkBE1yoCvsJ
+  templatePriority: null
+  archetypes: []
+  packFolder: ashowerofsilver
+  appearance: {complexion: []}
 sohl:
   items:
     - {model: sohl-sohl-attribute-str, system: {scoreBase: 16}}

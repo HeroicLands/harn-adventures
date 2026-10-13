@@ -19,7 +19,8 @@ data:
     eye_color: "brown"
     hair_color: "brown"
     skin_color: "swarthy"
-    extra_features: ["Complexion: attractive"]
+    complexion: ["clear"]
+    extra_features: []
   packFolder: hundholt
 sohl:
   items:

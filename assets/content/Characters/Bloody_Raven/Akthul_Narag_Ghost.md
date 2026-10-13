@@ -10,7 +10,7 @@ data:
   archetypes: [commoner]
   gender: male
   occupation: "Khuzdul Ghost"
-  appearance: {extra_features: ["Kleptomania"]}
+  appearance: {complexion: [], extra_features: []}
   packFolder: bloodyraven
 sohl:
   items:

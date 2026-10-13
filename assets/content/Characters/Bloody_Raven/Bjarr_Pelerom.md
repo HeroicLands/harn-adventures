@@ -16,15 +16,10 @@ data:
   frame: medium
   appearance:
     eye_color: "blue"
-    extra_features:
-      - "Missing his right arm below the elbow"
-      - "Moustache"
-      - "beard"
-      - "Narcissist"
-      - "psychopath"
-      - "missing right arm below the elbow"
-      - "Hair color: light brown/blonde"
-      - "Complexion: attractive"
+    hair_color: "dark_blonde"
+    skin_color: "fair"
+    complexion: ["clear"]
+    extra_features: ["Missing his right arm below the elbow", "Moustache", "beard"]
   packFolder: bloodyraven
 sohl:
   items:

@@ -17,7 +17,9 @@ data:
   appearance:
     eye_color: "grey"
     hair_color: "brown"
-    extra_features: ["Obese", "left-handed", "Complexion: plain"]
+    skin_color: "medium"
+    complexion: ["clear"]
+    extra_features: ["Obese"]
   packFolder: standingbearinn
 sohl:
   items:

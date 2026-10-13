@@ -2,4 +2,4 @@
 "harn-adventures": patch
 ---
 
-Character appearance summaries retain their original descriptive details.
+Character appearance summaries show skin conditions and physical traits.
