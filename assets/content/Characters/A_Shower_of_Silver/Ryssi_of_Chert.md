@@ -14,10 +14,11 @@ data:
   weight: "123 lbs"
   frame: scant
   appearance:
-    eye_color: "hazel"
-    hair_color: "black"
-    complexion: "fair complexion, average comeliness"
-    extra_features: ["Birthmark on neck", "Arachnophobia (mild): afraid of spiders"]
+    eye_color: hazel
+    hair_color: black
+    skin_color: fair
+    complexion: [clear]
+    extra_features: [Birthmark on neck]
   packFolder: ashowerofsilver
 sohl:
   items:

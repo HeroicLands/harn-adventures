@@ -13,11 +13,7 @@ data:
   height: '6'' 3"'
   weight: "167 lbs"
   frame: light
-  appearance:
-    eye_color: "green"
-    hair_color: "black"
-    complexion: "attractive"
-    extra_features: ["Scar on face"]
+  appearance: {eye_color: green, hair_color: black, complexion: [], extra_features: [Scar on face]}
   packFolder: standingbearinn
 sohl:
   items:

@@ -14,11 +14,7 @@ data:
   height: '5'' 10"'
   weight: "176 lbs"
   frame: heavy
-  appearance:
-    eye_color: "hazel"
-    hair_color: "shaved bald"
-    complexion: "average"
-    extra_features: ["Poxmarks", "Poxmarks (healed)", "motion sickness"]
+  appearance: {eye_color: hazel, complexion: [pockmarked], extra_features: [shaved head]}
   packFolder: standingbearinn
 sohl:
   items:

@@ -14,11 +14,7 @@ data:
   height: '5'' 9"'
   weight: "165 lbs"
   frame: medium
-  appearance:
-    eye_color: "hazel"
-    hair_color: "brown"
-    complexion: "average"
-    extra_features: ["Left handed", "Left-handed"]
+  appearance: {eye_color: hazel, hair_color: brown, complexion: [], extra_features: []}
   packFolder: bloodyraven
 sohl:
   items:

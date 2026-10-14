@@ -15,10 +15,10 @@ data:
   weight: "260 lbs"
   frame: heavy
   appearance:
-    eye_color: "green"
-    hair_color: "brown / grey"
-    complexion: "average"
-    extra_features: ["Obese", "bad right knee (Agility reduced)", "homosexual"]
+    eye_color: green
+    hair_color: "greying_brown"
+    complexion: []
+    extra_features: [Obese, a bad right knee]
   packFolder: standingbearinn
 sohl:
   items:

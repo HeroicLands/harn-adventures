@@ -15,15 +15,10 @@ data:
   weight: "173 lbs"
   frame: heavy
   appearance:
-    eye_color: "blue"
-    hair_color: "blond"
-    complexion: "plain"
-    extra_features:
-      - "Missing left eye"
-      - "scars on left side of his face"
-      - "Beard"
-      - "moustache"
-      - "Scar (left side of face)"
+    eye_color: blue
+    hair_color: blonde
+    complexion: []
+    extra_features: [Missing left eye, scars on left side of his face, Beard, moustache]
   packFolder: standingbearinn
 sohl:
   items:

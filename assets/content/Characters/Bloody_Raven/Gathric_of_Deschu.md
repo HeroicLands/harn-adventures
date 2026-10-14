@@ -15,10 +15,10 @@ data:
   weight: "173 lbs"
   frame: heavy
   appearance:
-    eye_color: "hazel"
-    hair_color: "blonde"
-    complexion: "attractive"
-    extra_features: ["Left handed", "Broken nose", "scars"]
+    eye_color: hazel
+    hair_color: blonde
+    complexion: []
+    extra_features: [Broken nose, scars]
   packFolder: bloodyraven
 sohl:
   items:

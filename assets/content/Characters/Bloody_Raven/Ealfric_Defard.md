@@ -15,10 +15,10 @@ data:
   weight: "157 lbs"
   frame: medium
   appearance:
-    eye_color: "grey"
-    hair_color: "brown"
-    complexion: "attractive"
-    extra_features: ["Scar (right forearm)", "Moustache"]
+    eye_color: grey
+    hair_color: brown
+    complexion: []
+    extra_features: [scar on right forearm, Moustache]
   packFolder: bloodyraven
 sohl:
   items:

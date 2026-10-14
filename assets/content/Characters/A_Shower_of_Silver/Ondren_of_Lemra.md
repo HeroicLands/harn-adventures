@@ -15,10 +15,11 @@ data:
   weight: "151 lbs"
   frame: heavy
   appearance:
-    eye_color: "blue"
-    hair_color: "black"
-    complexion: "average, medium complexion"
-    extra_features: ["Scars on both arms"]
+    eye_color: blue
+    hair_color: black
+    skin_color: medium
+    complexion: [clear]
+    extra_features: [Scars on both arms]
   packFolder: ashowerofsilver
 sohl:
   items:

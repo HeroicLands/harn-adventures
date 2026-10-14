@@ -14,11 +14,7 @@ data:
   height: '5'' 9"'
   weight: "157 lbs"
   frame: medium
-  appearance:
-    eye_color: "hazel"
-    hair_color: "red"
-    complexion: "average"
-    extra_features: ["Freckles"]
+  appearance: {eye_color: hazel, hair_color: red, complexion: [freckled], extra_features: []}
   packFolder: bloodyraven
 sohl:
   items:

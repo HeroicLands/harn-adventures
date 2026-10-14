@@ -10,7 +10,6 @@ data:
   archetypes: [commoner]
   gender: male
   occupation: "Khuzdul Ghost"
-  appearance: {extra_features: ["Kleptomania"]}
   packFolder: bloodyraven
 sohl:
   items:
@@ -80,5 +79,5 @@ This SoHL actor is a first-pass conversion of the HM3 actor of the same name.
   that mastery; SoHL has no psionic talents.
 - A ghost has no body, so no body structure is authored and the HM3 zero scores
   for the physical attributes stand.
-- The HM3 trait Kleptomania is recorded as an appearance feature; SoHL has no
-  matching trauma or trait item.
+- The HM3 trait Kleptomania has no SoHL counterpart: SoHL has no matching
+  trauma or trait item, so the trait is not recorded in the character's data.

@@ -14,11 +14,7 @@ data:
   height: '5'' 5"'
   weight: "141 lbs"
   frame: medium
-  appearance:
-    eye_color: "hazel"
-    hair_color: "black"
-    complexion: "average"
-    extra_features: ["Musophobia (fear of mice/rats)", "Moderate (Will x3)"]
+  appearance: {eye_color: hazel, hair_color: black, complexion: [], extra_features: []}
   packFolder: standingbearinn
 sohl:
   items:

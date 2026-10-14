@@ -15,10 +15,10 @@ data:
   weight: "165 lbs"
   frame: medium
   appearance:
-    eye_color: "hazel"
-    hair_color: "black"
-    complexion: "average"
-    extra_features: ["Moustache", "goatee", "Ambidextrous", "alcoholic (Mild: Will x 5)"]
+    eye_color: hazel
+    hair_color: black
+    complexion: []
+    extra_features: [Moustache, goatee]
   packFolder: standingbearinn
 sohl:
   items:

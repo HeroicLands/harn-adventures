@@ -16,10 +16,10 @@ data:
   weight: "145 lbs"
   frame: medium
   appearance:
-    eye_color: "blue"
-    hair_color: "brown"
-    skin_color: "medium"
-    complexion: "attractive"
+    eye_color: blue
+    hair_color: brown
+    skin_color: medium
+    complexion: [clear]
     extra_features: []
   packFolder: hundholt
 sohl:

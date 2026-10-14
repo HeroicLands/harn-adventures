@@ -15,10 +15,11 @@ data:
   weight: "130 lbs"
   frame: light
   appearance:
-    eye_color: "blue"
-    hair_color: "blonde"
-    complexion: "fair complexion, average comeliness"
-    extra_features: ["Scar across left cheecki", "Scar across left cheek", "Scar on Left Cheek"]
+    eye_color: blue
+    hair_color: blonde
+    skin_color: fair
+    complexion: [clear]
+    extra_features: [Scar across left cheek, Scar on Left Cheek]
   packFolder: ashowerofsilver
 sohl:
   items:

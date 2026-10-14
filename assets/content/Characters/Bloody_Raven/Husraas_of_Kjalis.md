@@ -15,10 +15,10 @@ data:
   weight: "153 lbs"
   frame: light
   appearance:
-    eye_color: "hazel"
-    hair_color: "dark blonde"
-    complexion: "attractive"
-    extra_features: ["Stutterer", "Moustache", "beard"]
+    eye_color: hazel
+    hair_color: "dark_blonde"
+    complexion: []
+    extra_features: [Moustache, beard]
   packFolder: bloodyraven
 sohl:
   items:

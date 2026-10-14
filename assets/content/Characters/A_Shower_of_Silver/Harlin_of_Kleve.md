@@ -14,9 +14,10 @@ data:
   weight: "165 lbs"
   frame: medium
   appearance:
-    eye_color: "hazel"
-    hair_color: "brown"
-    complexion: "medium complexion, average comeliness"
+    eye_color: hazel
+    hair_color: brown
+    skin_color: medium
+    complexion: [clear]
     extra_features: []
   packFolder: ashowerofsilver
 sohl:

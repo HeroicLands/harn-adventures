@@ -15,16 +15,10 @@ data:
   weight: "165 lbs"
   frame: medium
   appearance:
-    eye_color: "blue"
-    hair_color: "light brown/blonde"
-    complexion: "attractive"
-    extra_features:
-      - "Missing his right arm below the elbow"
-      - "Moustache"
-      - "beard"
-      - "Narcissist"
-      - "psychopath"
-      - "missing right arm below the elbow"
+    eye_color: blue
+    hair_color: "dark_blonde"
+    complexion: []
+    extra_features: [Missing his right arm below the elbow, Moustache, beard]
   packFolder: bloodyraven
 sohl:
   items:

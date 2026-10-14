@@ -15,16 +15,10 @@ data:
   weight: "138 lbs"
   frame: light
   appearance:
-    eye_color: "hazel"
-    hair_color: "grey"
-    complexion: "plain"
-    extra_features:
-      - "Constantly sneezing around dogs"
-      - "cats"
-      - "Beard"
-      - "moustache"
-      - "Allergy (dogs"
-      - "cats)"
+    eye_color: hazel
+    hair_color: grey
+    complexion: []
+    extra_features: [Beard, moustache]
   packFolder: bloodyraven
 sohl:
   items:
