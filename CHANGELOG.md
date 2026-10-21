@@ -1,5 +1,20 @@
 # harn-adventures
 
+## 0.1.2
+
+### Patch Changes
+
+**Characters**
+
+- Every character's eye color, hair color and skin use the same words as the rest of the setting, so a greying head of hair or a pock-marked face reads the same on every sheet.
+- The extra features listed on a character are plain physical marks; fears, allergies, handedness and similar traits stay in the character's description.
+
+**Website** — The homepage no longer shows the shared Heroic Lands banner image.
+
+**Actors:** the cast of the adventures now ships for Song of Heroic Lands as well, converted from the HârnMaster 3 stat blocks and marked as drafts, so a journal's character link opens the actor under either system.
+
+**Journals:** each NPC's description is also a journal entry of its own, readable under any system.
+
 ## 0.1.1
 
 ### Patch Changes
