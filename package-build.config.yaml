@@ -95,7 +95,7 @@ site:
               url: /
               text: What this module carries, and how to install it.
             - title: Modules
-              url: https://www.heroiclands.org/projects/modules/
+              url: https://www.heroiclands.org/projects/foundry-vtt-modules/
               text: The other modules published here.
             - title: Lythia.com
               url: https://www.lythia.com/
