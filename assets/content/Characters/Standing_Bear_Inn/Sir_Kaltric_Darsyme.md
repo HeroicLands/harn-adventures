@@ -1,6 +1,6 @@
 ---
 shortcode: sirkaltricdarsyme
-name: {full: "506-5 Feudal Knight MH - Sir Kaltric Darsyme", aliases: []}
+name: {full: "506-5 Feudal Knight MH - Sir Kaltric Darsyme"}
 type: being
 subType: npc
 tags: [draft]

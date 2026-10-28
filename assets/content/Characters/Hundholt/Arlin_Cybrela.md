@@ -1,6 +1,6 @@
 ---
 shortcode: arlincybrela
-name: {full: "Arlin Cybrela", aliases: []}
+name: {full: "Arlin Cybrela"}
 type: being
 subType: npc
 tags: [draft]

@@ -1,6 +1,6 @@
 ---
 shortcode: ervaenbandar
-name: {full: "Ervaen Bandar", aliases: []}
+name: {full: "Ervaen Bandar"}
 type: being
 subType: npc
 tags: [draft]

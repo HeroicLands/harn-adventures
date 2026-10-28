@@ -1,6 +1,6 @@
 ---
 shortcode: gilesofgilam
-name: {full: "322-2 Ostler - Giles of Gilam (Copy)", aliases: []}
+name: {full: "322-2 Ostler - Giles of Gilam (Copy)"}
 type: being
 subType: npc
 tags: [draft]

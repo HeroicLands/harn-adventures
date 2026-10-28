@@ -1,6 +1,6 @@
 ---
 shortcode: hedin
-name: {full: "Hedin", aliases: []}
+name: {full: "Hedin"}
 type: being
 subType: npc
 tags: [draft]

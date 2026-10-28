@@ -1,6 +1,6 @@
 ---
 shortcode: wolverine
-name: {full: "Wolverine", aliases: []}
+name: {full: "Wolverine"}
 type: being
 subType: creature
 tags: [draft]

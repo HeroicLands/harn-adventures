@@ -1,6 +1,6 @@
 ---
 shortcode: wyndaofelathel
-name: {full: "399-3 Other guild - Wynda of Elathel", aliases: []}
+name: {full: "399-3 Other guild - Wynda of Elathel"}
 type: being
 subType: npc
 tags: [draft]

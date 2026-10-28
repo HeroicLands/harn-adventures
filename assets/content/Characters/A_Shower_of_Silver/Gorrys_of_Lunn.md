@@ -1,6 +1,6 @@
 ---
 shortcode: gorrysoflunn
-name: {full: "Gorrys of Lunn", aliases: []}
+name: {full: "Gorrys of Lunn"}
 type: being
 subType: npc
 tags: [draft]

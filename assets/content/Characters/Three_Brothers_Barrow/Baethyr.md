@@ -1,6 +1,6 @@
 ---
 shortcode: baethyr
-name: {full: "Baethyr", aliases: []}
+name: {full: "Baethyr"}
 type: being
 subType: creature
 tags: [draft]

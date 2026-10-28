@@ -1,6 +1,6 @@
 ---
 shortcode: lyndofrisene
-name: {full: "Lynd of Risene", aliases: []}
+name: {full: "Lynd of Risene"}
 type: being
 subType: npc
 tags: [draft]

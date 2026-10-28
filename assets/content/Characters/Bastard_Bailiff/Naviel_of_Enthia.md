@@ -1,6 +1,6 @@
 ---
 shortcode: navielofenthia
-name: {full: "Naviel of Enthia", aliases: []}
+name: {full: "Naviel of Enthia"}
 type: being
 subType: npc
 tags: [draft]

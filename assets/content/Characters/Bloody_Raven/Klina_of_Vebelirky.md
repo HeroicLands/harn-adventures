@@ -1,6 +1,6 @@
 ---
 shortcode: klinaofvebelirky
-name: {full: "313-1 Jeweller - Klina of Vebelirky (Copy)", aliases: []}
+name: {full: "313-1 Jeweller - Klina of Vebelirky (Copy)"}
 type: being
 subType: npc
 tags: [draft]

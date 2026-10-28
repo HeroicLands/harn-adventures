@@ -1,6 +1,6 @@
 ---
 shortcode: threebrothersbarrow
-name: {full: "Three Brothers Barrow", aliases: []}
+name: {full: "Three Brothers Barrow"}
 type: folder
 data: {id: qaxpbWcsu85xk29f}
 ---

@@ -1,6 +1,6 @@
 ---
 shortcode: arwalinofrogila
-name: {full: "409-1 Huntsman - Arwalin of Rogila (Copy)", aliases: []}
+name: {full: "409-1 Huntsman - Arwalin of Rogila (Copy)"}
 type: being
 subType: npc
 tags: [draft]

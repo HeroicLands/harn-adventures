@@ -1,6 +1,6 @@
 ---
 shortcode: ashowerofsilver
-name: {full: "A Shower of Silver", aliases: []}
+name: {full: "A Shower of Silver"}
 type: folder
 data: {id: 1mou4DayWJJgwpRn}
 ---

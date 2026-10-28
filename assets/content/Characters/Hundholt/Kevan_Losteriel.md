@@ -1,6 +1,6 @@
 ---
 shortcode: kevanlosteriel
-name: {full: "Kevan Losteriel", aliases: []}
+name: {full: "Kevan Losteriel"}
 type: being
 subType: npc
 tags: [draft]

@@ -1,6 +1,6 @@
 ---
 shortcode: kalasofdelsin
-name: {full: "Kalas of Delsin", aliases: []}
+name: {full: "Kalas of Delsin"}
 type: being
 subType: npc
 tags: [draft]

@@ -1,6 +1,6 @@
 ---
 shortcode: kymofdorsey
-name: {full: "312-5 Innkeeper - Kym of Dorsey", aliases: []}
+name: {full: "312-5 Innkeeper - Kym of Dorsey"}
 type: being
 subType: npc
 tags: [draft]

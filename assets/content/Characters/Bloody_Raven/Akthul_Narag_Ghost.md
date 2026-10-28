@@ -1,6 +1,6 @@
 ---
 shortcode: akthulnaragghost
-name: {full: "Akthul Narag (Ghost)", aliases: []}
+name: {full: "Akthul Narag (Ghost)"}
 type: being
 subType: npc
 tags: [draft]

@@ -1,6 +1,6 @@
 ---
 shortcode: bjarrpelerom
-name: {full: "608-1 Priest Sarajin - Bjarr Pelerom (Copy)", aliases: []}
+name: {full: "608-1 Priest Sarajin - Bjarr Pelerom (Copy)"}
 type: being
 subType: npc
 tags: [draft]

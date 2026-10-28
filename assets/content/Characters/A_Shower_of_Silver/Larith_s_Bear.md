@@ -1,6 +1,6 @@
 ---
 shortcode: larithsbear
-name: {full: "Larith's Bear", aliases: []}
+name: {full: "Larith's Bear"}
 type: being
 subType: creature
 tags: [draft]

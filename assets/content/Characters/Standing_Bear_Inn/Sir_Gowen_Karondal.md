@@ -1,6 +1,6 @@
 ---
 shortcode: sirgowenkarondal
-name: {full: "507-8 Fighting Order MH - Sir Gowen Karondal", aliases: []}
+name: {full: "507-8 Fighting Order MH - Sir Gowen Karondal"}
 type: being
 subType: npc
 tags: [draft]

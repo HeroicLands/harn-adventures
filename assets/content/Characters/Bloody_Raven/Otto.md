@@ -1,6 +1,6 @@
 ---
 shortcode: otto
-name: {full: "115-1 Mercenary MF - Otto (Copy)", aliases: []}
+name: {full: "115-1 Mercenary MF - Otto (Copy)"}
 type: being
 subType: npc
 tags: [draft]

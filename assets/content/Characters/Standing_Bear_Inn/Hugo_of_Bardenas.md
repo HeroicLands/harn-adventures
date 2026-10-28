@@ -1,6 +1,6 @@
 ---
 shortcode: hugoofbardenas
-name: {full: "312-6 Innkeeper - Hugo of Bardenas", aliases: []}
+name: {full: "312-6 Innkeeper - Hugo of Bardenas"}
 type: being
 subType: npc
 tags: [draft]

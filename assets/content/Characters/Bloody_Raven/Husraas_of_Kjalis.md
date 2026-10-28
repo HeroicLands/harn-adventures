@@ -1,6 +1,6 @@
 ---
 shortcode: husraasofkjalis
-name: {full: "329-1 Shipwright - Husraas of Kjalis (Copy)", aliases: []}
+name: {full: "329-1 Shipwright - Husraas of Kjalis (Copy)"}
 type: being
 subType: npc
 tags: [draft]

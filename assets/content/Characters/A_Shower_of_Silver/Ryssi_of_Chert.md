@@ -1,6 +1,6 @@
 ---
 shortcode: ryssiofchert
-name: {full: "Ryssi of Chert", aliases: []}
+name: {full: "Ryssi of Chert"}
 type: being
 subType: npc
 tags: [draft]

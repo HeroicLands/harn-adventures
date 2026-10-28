@@ -1,6 +1,6 @@
 ---
 shortcode: jedesguard
-name: {full: "Jedes Guard", aliases: []}
+name: {full: "Jedes Guard"}
 type: being
 subType: npc
 tags: [draft]

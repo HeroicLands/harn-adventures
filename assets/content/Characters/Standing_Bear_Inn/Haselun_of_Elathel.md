@@ -1,6 +1,6 @@
 ---
 shortcode: haselunofelathel
-name: {full: "312-2 Innkeeper - Haselun of Elathel", aliases: []}
+name: {full: "312-2 Innkeeper - Haselun of Elathel"}
 type: being
 subType: npc
 tags: [draft]

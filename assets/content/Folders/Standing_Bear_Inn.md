@@ -1,6 +1,6 @@
 ---
 shortcode: standingbearinn
-name: {full: "Standing Bear Inn", aliases: []}
+name: {full: "Standing Bear Inn"}
 type: folder
 data: {id: EpaQpRcJt7G15vVw}
 ---

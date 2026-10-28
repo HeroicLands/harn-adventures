@@ -1,6 +1,6 @@
 ---
 shortcode: corik
-name: {full: "Corik", aliases: []}
+name: {full: "Corik"}
 type: being
 subType: npc
 tags: [draft]

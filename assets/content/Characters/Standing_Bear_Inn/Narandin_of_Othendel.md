@@ -1,6 +1,6 @@
 ---
 shortcode: narandinofothendel
-name: {full: "322-4 Ostler - Narandin of Othendel", aliases: []}
+name: {full: "322-4 Ostler - Narandin of Othendel"}
 type: being
 subType: npc
 tags: [draft]

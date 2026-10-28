@@ -1,6 +1,6 @@
 ---
 shortcode: faeraofkirst
-name: {full: "312-3 Innkeeper - Faera of Kirst", aliases: []}
+name: {full: "312-3 Innkeeper - Faera of Kirst"}
 type: being
 subType: npc
 tags: [draft]

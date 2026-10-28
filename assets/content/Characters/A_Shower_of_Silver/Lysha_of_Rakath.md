@@ -1,6 +1,6 @@
 ---
 shortcode: lyshaofrakath
-name: {full: "Lysha of Rakath", aliases: []}
+name: {full: "Lysha of Rakath"}
 type: being
 subType: npc
 tags: [draft]

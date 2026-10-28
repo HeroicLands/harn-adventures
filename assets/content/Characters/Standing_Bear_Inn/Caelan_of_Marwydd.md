@@ -1,6 +1,6 @@
 ---
 shortcode: caelanofmarwydd
-name: {full: "327-1 Salter - Caelan of Marwydd", aliases: []}
+name: {full: "327-1 Salter - Caelan of Marwydd"}
 type: being
 subType: npc
 tags: [draft]

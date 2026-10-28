@@ -1,6 +1,6 @@
 ---
 shortcode: larith
-name: {full: "Larith", aliases: []}
+name: {full: "Larith"}
 type: being
 subType: npc
 tags: [draft]

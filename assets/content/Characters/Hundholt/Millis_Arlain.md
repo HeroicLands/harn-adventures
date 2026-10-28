@@ -1,6 +1,6 @@
 ---
 shortcode: millisarlain
-name: {full: "Millis Arlain", aliases: []}
+name: {full: "Millis Arlain"}
 type: being
 subType: npc
 tags: [draft]

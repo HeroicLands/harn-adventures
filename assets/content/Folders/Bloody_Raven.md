@@ -1,6 +1,6 @@
 ---
 shortcode: bloodyraven
-name: {full: "Bloody Raven", aliases: []}
+name: {full: "Bloody Raven"}
 type: folder
 data: {id: WxWh47laCJqgcp7p}
 ---

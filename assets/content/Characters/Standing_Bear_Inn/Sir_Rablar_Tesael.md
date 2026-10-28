@@ -1,6 +1,6 @@
 ---
 shortcode: sirrablartesael
-name: {full: "506-6 Feudal Knight MH - Sir Rablar Tesael", aliases: []}
+name: {full: "506-6 Feudal Knight MH - Sir Rablar Tesael"}
 type: being
 subType: npc
 tags: [draft]

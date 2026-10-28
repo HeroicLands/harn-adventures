@@ -1,6 +1,6 @@
 ---
 shortcode: hundholt
-name: {full: "Hundholt", aliases: []}
+name: {full: "Hundholt"}
 type: folder
 data: {id: mdeJgc4a75X1slGR}
 ---

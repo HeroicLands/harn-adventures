@@ -1,6 +1,6 @@
 ---
 shortcode: ylina
-name: {full: "124-1 Viking Clansman LF - Ylina (Copy)", aliases: []}
+name: {full: "124-1 Viking Clansman LF - Ylina (Copy)"}
 type: being
 subType: npc
 tags: [draft]

@@ -1,6 +1,6 @@
 ---
 shortcode: esyraofghel
-name: {full: "312-4 Innkeeper - Esyra of Ghel", aliases: []}
+name: {full: "312-4 Innkeeper - Esyra of Ghel"}
 type: being
 subType: npc
 tags: [draft]

@@ -1,6 +1,6 @@
 ---
 shortcode: gathricofdeschu
-name: {full: "417-1 Servant - Gathric of Deschu (Copy)", aliases: []}
+name: {full: "417-1 Servant - Gathric of Deschu (Copy)"}
 type: being
 subType: npc
 tags: [draft]

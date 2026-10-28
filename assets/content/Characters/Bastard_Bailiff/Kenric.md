@@ -1,6 +1,6 @@
 ---
 shortcode: kenric
-name: {full: "Kenric", aliases: []}
+name: {full: "Kenric"}
 type: being
 subType: npc
 tags: [draft]

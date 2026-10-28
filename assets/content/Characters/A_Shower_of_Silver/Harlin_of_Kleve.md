@@ -1,6 +1,6 @@
 ---
 shortcode: harlinofkleve
-name: {full: "Harlin of Kleve", aliases: []}
+name: {full: "Harlin of Kleve"}
 type: being
 subType: npc
 tags: [draft]

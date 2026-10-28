@@ -1,6 +1,6 @@
 ---
 shortcode: bastardbailiff
-name: {full: "Bastard Bailiff", aliases: []}
+name: {full: "Bastard Bailiff"}
 type: folder
 data: {id: qMuHnSAsOeMdf5vZ}
 ---

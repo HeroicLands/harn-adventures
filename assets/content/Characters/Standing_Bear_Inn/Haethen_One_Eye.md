@@ -1,6 +1,6 @@
 ---
 shortcode: haethenoneeye
-name: {full: '125-2 Huscarl MF - Haethen "One-Eye"', aliases: []}
+name: {full: '125-2 Huscarl MF - Haethen "One-Eye"'}
 type: being
 subType: npc
 tags: [draft]

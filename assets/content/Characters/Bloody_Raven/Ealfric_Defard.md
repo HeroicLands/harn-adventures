@@ -1,6 +1,6 @@
 ---
 shortcode: ealfricdefard
-name: {full: "127-1 Yeoman LB - Ealfric Defard (Copy)", aliases: []}
+name: {full: "127-1 Yeoman LB - Ealfric Defard (Copy)"}
 type: being
 subType: npc
 tags: [draft]

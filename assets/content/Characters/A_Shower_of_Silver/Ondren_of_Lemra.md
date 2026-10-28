@@ -1,6 +1,6 @@
 ---
 shortcode: ondrenoflemra
-name: {full: "Ondren of Lemra", aliases: []}
+name: {full: "Ondren of Lemra"}
 type: being
 subType: npc
 tags: [draft]

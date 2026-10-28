@@ -1,6 +1,6 @@
 ---
 shortcode: akittofllack
-name: {full: "Akitt of Llack", aliases: []}
+name: {full: "Akitt of Llack"}
 type: being
 subType: npc
 tags: [draft]
