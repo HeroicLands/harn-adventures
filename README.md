@@ -49,3 +49,13 @@ This module is "[Fanon](https://www.lythia.com/about/publishing-fan-written-mate
 | [Three Brothers Barrow](https://www.lythia.com/adventures/three-brothers-barrow/)             | Location  | Rob Barnes              | Richard Luschek                                                                            |                                                                                                                                                                                                                                                                                                                                                          |
 
 The original maps from these works have been used as inspiration, and new maps have been designed specifically to meet the requirements of the VTT environment. They were made using Dungeondraft; some assets used to create them are from [Forgotten Adventures](https://www.forgotten-adventures.net/).
+
+## Pull request checks
+
+A pull request whose title starts with `WIP:` runs the light checks. An existing
+required check runs a short guard and fails, blocking merges while the expensive
+steps stay skipped. Remove the prefix with `earl pr ready`; it starts fresh
+required checks before scheduling a merge. Changing the title by hand does not
+start those checks. Main, release and manual runs keep their existing checks.
+
+Check the workflow gating locally with `node --test utils/wip-workflows.test.mjs`.
