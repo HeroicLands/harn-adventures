@@ -9,6 +9,7 @@
 # address parsing, which treats `-` purely as a segment separator.
 contentPackage: harnadventures
 packageKind: modules
+userAgentUrl: https://www.heroiclands.org/
 
 authors:
     - name: Tom Rodriguez
