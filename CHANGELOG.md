@@ -1,5 +1,21 @@
 # harn-adventures
 
+## 0.1.2
+
+**Adventures**
+
+- Every character sheet uses consistent setting terms for eye color, hair color and skin, including gray hair and pockmarks.
+- The extra features listed on a character are plain physical marks; fears, allergies, handedness and similar traits stay in the character's description.
+
+**Foundry**
+
+- The cast of the adventures ships for Song of Heroic Lands as well, marked as drafts, so a journal's character link opens the actor under either system.
+- Each NPC's description is also a journal entry of its own, readable under any system.
+
+**Website**
+
+- The homepage no longer shows the shared Heroic Lands banner image.
+
 ## 0.1.1
 
 ### Patch Changes
